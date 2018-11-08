@@ -1,0 +1,4 @@
+/* pages/rili/rili.wxss */
+.body-view{
+  /* transform: rotate(90deg) */
+}

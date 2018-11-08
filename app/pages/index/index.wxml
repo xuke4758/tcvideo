@@ -1,0 +1,70 @@
+<!--pages/index/index.wxml-->
+<view class='h72'>
+  <view class='pofx t0 l0 w100b zindex99'>
+    <view class='bor'>
+      <view class='left'>
+        <scroll-view scroll-x="true" class='scroll'>
+          <view class='abc add' data-index="" data-state='abc' bindtap='bit'>推荐</view>
+          <view class='abc' bindtap='bit'>附近</view>
+          <view class='abc' bindtap='bit'>备孕</view>
+          <view class='abc' bindtap='bit'>孕期</view>
+          <view class='abc' bindtap='bit'>产后</view>
+          <view class='abc' bindtap='bit'>0~1岁</view>
+          <view class='abc' bindtap='bit'>1~3岁</view>
+          <view class='abc' bindtap='bit'>3~6岁</view>
+          <view class='abc' bindtap='bit'>6~12岁</view>
+          <view class='abc' bindtap='bit'>12~18岁</view>
+          <!--遍历 传参 返回字段 更新页面  -->
+        </scroll-view>
+      </view>
+      <!--搜索按钮 -->
+      <view class='search' bindtap='gosearch'> <!--//路由 跳页面--> 
+        <image src='{{searchimg}}'></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='pd24'>
+  <scroll-view class='asst-list' scroll-x="true">
+    <view class='dsf fz22 colfff'>
+      <view class='asst-li active'>育儿经验</view>
+      <view class='asst-li'>晒娃</view>
+      <view class='asst-li'>潮妈潮宝</view>
+      <view class='asst-li'>吃货</view>
+      <view class='asst-li'>辣妈叨叨</view>
+      <view class='asst-li'>败家</view>
+      <view class='asst-li'>旅行</view>
+      <view class='asst-li'>萌宠</view>
+      <view class='asst-li'>败家</view>
+      <view class='asst-li'>旅行</view>
+      <view class='asst-li'>萌宠</view>
+    </view>
+  </scroll-view>
+</view>
+<view class='pb20' bindtap='gocity'>
+  <view class='locabox dsf jcsb alc fz22 colfff5'>
+    <view class='dsif'>
+      <view class='dsf alc'>
+        <image class='autodw' src='{{dw}}'></image>
+        <text>自动定位：北京</text>
+      </view>
+    </view>
+    <view class='dsif'>
+      <view class='dsf alc'>
+        <text>切换</text>
+        <image class='qhimg' src='{{qh}}'></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='pbmain'>
+  <view class='pbbox'>
+  
+    <block wx:for='{{list}}' wx:key='img'>
+      <sault saultdata='{{item}}'></sault>
+    </block>
+    
+  </view>
+</view>

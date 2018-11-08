@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/index",
+    "pages/index/city",
+    "pages/maodian/maodian",
+    "pages/rili/rili",
+    "pages/search/index",
+    "pages/search/toground",
+    "pages/viddetail/viddetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "糖巢视频",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#4A90E2",
+    "borderStyle": "black",
+    "backgroundColor": "#323232",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./asset/a1.png",
+        "selectedIconPath": "./asset/a1_a.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "关注",
+        "iconPath": "./asset/a2.png",
+        "selectedIconPath": "./asset/a2_a.png"
+      },
+      {
+        "pagePath": "pages/maodian/maodian",
+        "iconPath": "./asset/a3.png",
+        "selectedIconPath": "./asset/a3.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "发现",
+        "iconPath": "./asset/a4.png",
+        "selectedIconPath": "./asset/a4_a.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "./asset/a5.png",
+        "selectedIconPath": "./asset/a5_a.png"
+      }
+    ]
+  }
+}

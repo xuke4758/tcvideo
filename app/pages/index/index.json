@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "糖巢视频",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "sault": "/pages/templates/sault/sault"
+  }
+}

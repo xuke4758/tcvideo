@@ -1,0 +1,101 @@
+/* pages/city/city.wxss */
+@import '/pages/templates/flex/flex2.wxss';
+.city-t{
+  padding: 10rpx 0 0 0;
+}
+.city-dw{
+  padding: 0 0 0 24rpx;
+  height: 54rpx;
+}
+.city-dw-img{
+  width: 22rpx;
+  height: 24rpx;
+  margin: 0 16rpx 0 0;
+}
+.city-info{
+  padding: 0 0 0 24rpx;
+  height: 64rpx;
+}
+.city-line{
+  height: 1px;
+  background: rgba(255,255,255,0.20);
+}
+.city-line-mg{
+  margin: 14rpx 24rpx;
+}
+.city-cen{
+  padding: 0 24rpx;
+}
+.city-cen-ls{
+  height: 74rpx;
+}
+.city-cen-ls-img{
+  width: 22rpx;
+  height: 22rpx;
+  margin: 0 16rpx 0 0;
+}
+.city-ls-list{
+  padding-bottom: 14rpx;
+}
+.city-ls-li{
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 24rpx 12rpx 0;
+  width: 211rpx;
+  height: 62rpx;
+  opacity: 0.4;
+  border: 1px solid rgba(255,255,255, 1);
+  border-radius: 4rpx;
+  font-size: 26rpx;
+  color: #fff;
+}
+.city-ls-li:nth-child(3n){
+  margin-right: 0;
+}
+.city-main{}
+.city-li{
+  border-top:1px solid rgba(255,255,255,0.20);
+}
+.city-zm{
+  padding: 40rpx 0 8rpx;
+  height: 34rpx;
+}
+.city-jt{
+  padding: 0 0 14rpx 0;
+}
+.city-jt-li{
+  height: 56rpx;
+}
+.city-fixed{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 26rpx;
+  height: 100%;
+}
+.city-main-li{
+  width: 26rpx;
+  height: 30rpx;
+  font-size: 20rpx;
+  opacity: 0.4;
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

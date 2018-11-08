@@ -1,0 +1,189 @@
+<!--pages/viddetail/viddetail.wxml-->
+<view>
+  <view>
+    <view class='pofx t0 l0 w100b h100b bgfff'>
+      <view class='w100b h100b'>
+        <view class='pore w100b h100b'>
+          <view class='poab w100b h100b t0 l0'>
+            <video class='w100b h100b' objectFit='fill' src='https://www.tangchaoimg.com/video/x.mp4'></video>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='poab w100b h100b t0 l0 zindex5'>
+    <view class='w100b h100b'>
+        <view class='pore w100b h100b'>
+            <!--观看人-->
+            <view class='dsf pt24 dsf jcfe'>
+                <view class='lookman pore'>
+                    <view class='pore nowrap zindex10 h100b dsf alc '>
+                        <image class='look-tx l1' src='{{s1}}'></image>
+                        <image class='look-tx l2' src='{{s2}}'></image>
+                        <image class='look-tx l3' src='{{s3}}'></image>
+                        <image class='look-tx l4' src='{{s4}}'></image>
+                        <image class='look-tx l5' src='{{tx}}'></image>
+                    </view>
+                    <view class='lookman-mask w100b h100b poab t0 l0 zindex20'>
+                        <view class='poab r0 t0 h100b dsf alc zindex15'><view class='dsinline yeswrap fz24 colfff'>500人观看</view> <image class='lookman-xy' src='{{xy}}'></image></view>
+                    </view>
+                </view>
+            </view>
+            <!--观看人-->
+            <!--右下角-->
+            <view class='fllow-box poab r0 b0'>
+                <view>
+                    <view class='fllow-box-tx'>
+                        <view class='dsf jcc pore fllow-box-tx-img'>
+                            <image class='img' src='{{tx}}'></image>
+                            <image class='poab img2' src='{{gztx}}'></image>
+                        </view>
+                    </view>
+                    <view class='fllow-box-fx'>
+                        <view>
+                            <view class='dsf jcc fllow-box-fx-img'><image class='img' src='{{h}}'></image></view>
+                            <view class='dsf jcc alc h34 fz24 colfff'>12.3w</view>
+                        </view>
+                    </view>
+                    <view class='fllow-box-fx'>
+                        <view>
+                            <view class='dsf jcc fllow-box-fx-img'><image class='img' src='{{pl}}'></image></view>
+                            <view class='dsf jcc alc h34 fz24 colfff'>123</view>
+                        </view>
+                    </view>
+                    <view class='fllow-box-fx'>
+                        <view>
+                            <view class='dsf jcc fllow-box-fx-img'><image class='img' src='{{sc}}'></image></view>
+                            <view class='dsf jcc alc h34 fz24 colfff'>123</view>
+                        </view>
+                    </view>
+                    <view class='fllow-box-fx30'>
+                        <view>
+                            <view class='dsf jcc fllow-box-fx-img'><image class='img' src='{{fx}}'></image></view>
+                            <view class='dsf jcc alc h34 fz24 colfff'>123</view>
+                        </view>
+                    </view>
+                    <view class='fllow-box-zp pore'>
+                        <image class='w100b h100b' src='{{zp}}'></image>
+                        <view class='fllow-box-zp-fff poab bgfff'></view>
+                        <!-- <image class='fllow-box-zp-yf poab' src='{{zpyf}}'></image> -->
+                    </view>
+                </view>
+            </view>
+            <!--右下角-->
+            <!--左下角-->
+            <view class='fllow-txt poab b0 l0 colfff'>
+                <view class='fllow-txt-cot'>
+                    <view>
+                        <view class='pb18 fz32'>@猫爸成长日记</view>
+                        <view class='pb18 fz32'>记录宝宝的美好瞬间</view>
+                        <view class='dsf alc h40 nowrap'>
+                            <image class='fllow-txt-yxyy' src='{{yxyy}}'></image>
+                            <view class='fz28 w222 h40 overhide pore'>
+                                <view class='nowrap poab h100b' style='left: -18px;'>@郭小姐啊创作的原声</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <!--左下角-->
+            <!--评论区-->
+            <view class='poab l0 b0 w100b zindex100 fllow-pl'>
+                <view class='w100b h100b'>
+                    <view class='pore w100b h100b'>
+                        <view class='h74 dsf alc jcc pore'>
+                            <view class='colfff fz24'>56评论</view>
+                            <view class='poab r0 t0 dsf alc jcc fllow-pl-close h100b'><image class='img' src='{{close}}'></image></view>
+                        </view>
+                        <scroll-view class='fllow-pl-scroll' scroll-y>
+                            <view class='fllow-list'>
+                                <view class='fllow-li'>
+                                    <view class='pl24 pr24 dsf jcsb'>
+                                        <view class='w640'>
+                                            <view class='dsf'>
+                                                <view class='fllow-li-tx dsif alc'><image class='img' src='{{tx}}'></image></view>
+                                                <view class='w560'>
+                                                    <view class='h34 pb3 dsf alc fz24 colfff op5'>@啊啦啦啦啦啦</view>
+                                                    <view class='fz24 dsif alb colfff lh34'>
+                                                        <view class='dsinline yeswrap'>宝宝好可爱啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊...<view class='dsinline yeswrap fz24 col32 pore t2'>更多</view> <view class='dsinline yeswrap fz22 col80 op5 pore t2 ml19'>1小时前</view> 
+                                                        </view> 
+                                                    </view>
+                                                    <view class='fllow-li-vice blfff2'>
+                                                        <view class='fllow-li-vi'>
+                                                            <view class='lh28 fz20 colfff op5'>@幺</view>
+                                                            <view class='lh28 fz20 colfff'>
+                                                                <view class='dsinline yeswrap'>来看看儿子来看看儿子来看看儿子来看看儿子来看看儿子来看看儿子...<view class='dsinline yeswrap fz20 col32 pore t2'>更多</view> 
+                                                                </view> 
+                                                            </view>
+                                                        </view>
+                                                        <view class='pt10 pb5'>
+                                                            <view class='fz20 colfff'>更多回复（7）</view>
+                                                        </view>
+                                                        <!-- <view class='fllow-li-vi'>
+                                                          <view class='lh28 fz20 colfff op5'>@幺<view class='dsinline yeswrap ml16 me16 fz20 colfff op8'>回复</view> </view>
+                                                          <view class='lh28 fz20 colfff'>
+                                                            <view class='dsinline yeswrap'>来看看儿子来看看儿子来看看儿子来看看儿子来看看儿子来看看儿子...<view class='dsinline yeswrap fz20 col32 pore t2'>更多</view> 
+                                                            </view> 
+                                                          </view>
+                                                        </view>
+                                                        <view class='fllow-li-vi'>
+                                                          <view class='lh28 fz20 colfff op5'>@幺</view>
+                                                          <view class='lh28 fz20 colfff'>
+                                                            <view class='dsinline yeswrap'>来看看儿子来看看儿子来看看儿子来看看儿子来
+                                                            </view> 
+                                                          </view>
+                                                        </view> -->
+                                                    </view>
+                                                </view>
+                                            </view>
+                                        </view>
+                                        <view class='w60'>
+                                            <view class='w100b'>
+                                                <view class='fllow-li-xh dsf jcc alc'><image class='img' src='{{hua}}'></image></view>
+                                                <!-- <view><image src='{{hua_a}}'></image></view> -->
+                                                <view class='fz22 colfff dsf jcc nowrap'>12</view>
+                                            </view>
+                                        </view>
+                                    </view>
+                                </view>
+                                <view class='fllow-li'>
+                                    <view class='pl24 pr24 dsf jcsb'>
+                                        <view class='w640'>
+                                            <view class='dsf'>
+                                                <view class='fllow-li-tx dsif alc'><image class='img' src='{{tx}}'></image></view>
+                                                <view class=''>
+                                                    <view class='h34 pb3 dsf alc fz24 colfff op5'>@啊啦啦啦啦啦</view>
+                                                    <view class='fz24 dsif alb colfff lh34'>
+                                                        <view class='dsinline yeswrap'>宝宝好可爱啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊...<view class='dsinline yeswrap fz24 col32 pore t2'>更多</view> <view class='dsinline yeswrap fz22 col80 op5 pore t2 ml19'>1小时前</view> </view> 
+                                                    </view>
+                                                </view>
+                                            </view>
+                                        </view>
+                                        <view class='w60'>
+                                            <view class='w100b'>
+                                                <view class='fllow-li-xh dsf jcc alc'><image class='img' src='{{hua}}'></image></view>
+                                                <!-- <view><image src='{{hua_a}}'></image></view> -->
+                                                <view class='fz22 colfff dsf jcc nowrap'>12</view>
+                                            </view>
+                                        </view>
+                                    </view>
+                                </view>
+                            </view>
+                        </scroll-view>
+                        <!-- <form> -->
+                            <view class='poab b0 l0 w100b fllow-pl-bin'>
+                                <view class='dsf alc jcsb h100b'>
+                                    <view class='plr36 h100b'><input class='h100b fllow-pl-bin-input' placeholder-class='fllow-pl-bin-input-pl' placeholder='快，说点好听的…'></input></view>
+                                    <view class=' dsif alc jcc w112 h100b fz32 col4a90e2'>发送</view>
+                                </view>
+                            </view>
+                        <!-- </form> -->
+                    </view>
+                </view>
+            </view>
+            <!--评论区-->
+        </view>
+    </view>
+</view>

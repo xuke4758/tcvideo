@@ -1,0 +1,112 @@
+<!--pages/city/city.wxml-->
+<view class='city-fixed dsf alc'>
+  <view class='city-f-main'>
+    <view class='city-main-li dsf alc jcc'>B</view>
+    <view class='city-main-li dsf alc jcc'>C</view>
+    <view class='city-main-li dsf alc jcc'>D</view>
+    <view class='city-main-li dsf alc jcc'>E</view>
+    <view class='city-main-li dsf alc jcc'>F</view>
+    <view class='city-main-li dsf alc jcc'>G</view>
+    <view class='city-main-li dsf alc jcc'>H</view>
+    <view class='city-main-li dsf alc jcc'>I</view>
+    <view class='city-main-li dsf alc jcc'>J</view>
+    <view class='city-main-li dsf alc jcc'>K</view>
+    <view class='city-main-li dsf alc jcc'>L</view>
+    <view class='city-main-li dsf alc jcc'>M</view>
+    <view class='city-main-li dsf alc jcc'>X</view>
+    <view class='city-main-li dsf alc jcc'>Y</view>
+    <view class='city-main-li dsf alc jcc'>Z</view>
+  </view>
+</view>
+<view class=''>
+  <view class='city-t'>
+    <view class='city-dw dsf alc'><image class='city-dw-img' src='{{dw}}'></image><text class='fz24 colfff'>自动定位</text></view>
+    <view class='city-info dsf alc'>
+      <view class='fz32 colfff'>北京</view>
+    </view>
+    <view class=''></view>
+  </view>
+  <view class='city-line city-line-mg'></view>
+  <view class='city-cen'>
+    <view class='city-cen-ls dsf alc'>
+      <image class='city-cen-ls-img' src='{{history}}'></image>
+      <text class='fz24 colfff'>历史访问</text>
+    </view>
+    <view class='city-ls-list'>
+      <view class='city-ls-li'>深圳</view>
+      <view class='city-ls-li'>北京</view>
+      <view class='city-ls-li'>上海</view>
+      <view class='city-ls-li'>天津</view>
+    </view>
+    <view class='city-line'></view>
+    <view class='city-hot mt14'>
+      <view class='city-cen-ls dsf alc'>
+        <image class='city-dw-img' src='{{hotcity}}'></image>
+        <text class='fz24 colfff'>热门城市</text>
+      </view>
+    </view>
+    <view class='city-ls-list'>
+      <view class='city-ls-li'>深圳</view>
+      <view class='city-ls-li'>北京</view>
+      <view class='city-ls-li'>上海</view>
+      <view class='city-ls-li'>天津</view>
+      <view class='city-ls-li'>北京</view>
+      <view class='city-ls-li'>上海</view>
+      <view class='city-ls-li'>天津</view>
+      <view class='city-ls-li'>北京</view>
+      <view class='city-ls-li'>上海</view>
+      <view class='city-ls-li'>天津</view>
+      <view class='city-ls-li'>北京</view>
+      <view class='city-ls-li'>上海</view>
+      <view class='city-ls-li'>天津</view>
+    </view>
+
+    <view class='city-main'>
+      <view class='city-li'>
+        <view class='city-zm'>
+          <view class='h100b dsf alc colfff fz24'>B</view>
+        </view>
+        <view class='city-jt'>
+          <view class='city-jt-li dsf alc colfff fz26'>保定</view>
+          <view class='city-jt-li dsf alc colfff fz26'>北京</view>
+        </view>
+      </view>
+      <view class='city-li'>
+        <view class='city-zm'>
+          <view class='h100b dsf alc colfff fz24'>C</view>
+        </view>
+        <view class='city-jt'>
+          <view class='city-jt-li dsf alc colfff fz26'>长春</view>
+          <view class='city-jt-li dsf alc colfff fz26'>长沙</view>
+        </view>
+      </view>
+      <view class='city-li'>
+        <view class='city-zm'>
+          <view class='h100b dsf alc colfff fz24'>C</view>
+        </view>
+        <view class='city-jt'>
+          <view class='city-jt-li dsf alc colfff fz26'>长春</view>
+          <view class='city-jt-li dsf alc colfff fz26'>长沙</view>
+        </view>
+      </view>
+      <view class='city-li'>
+        <view class='city-zm'>
+          <view class='h100b dsf alc colfff fz24'>C</view>
+        </view>
+        <view class='city-jt'>
+          <view class='city-jt-li dsf alc colfff fz26'>长春</view>
+          <view class='city-jt-li dsf alc colfff fz26'>长沙</view>
+        </view>
+      </view>
+      <view class='city-li'>
+        <view class='city-zm'>
+          <view class='h100b dsf alc colfff fz24'>C</view>
+        </view>
+        <view class='city-jt'>
+          <view class='city-jt-li dsf alc colfff fz26'>长春</view>
+          <view class='city-jt-li dsf alc colfff fz26'>长沙</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
