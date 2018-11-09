@@ -1,0 +1,82 @@
+<!--pages/shot/shot.wxml-->
+<view wx:if='{{phflag == 1}}'>
+  <view class='poab w100b h100b t0 l0 zindex5'>
+    <camera class='w100b h100b' device-position="{{devicetp}}" flash="auto" binderror="error">
+      <cover-view class='pofx w100b h100b t0 l0 zindex100'>
+        <cover-view class='w100b h100b'>
+          <cover-view class='close-shot poab l0 t0 '>
+            <cover-image class='img' src='{{close}}'></cover-image>
+          </cover-view>
+          <cover-view class='shot-menu poab r0 t0 fz22 colfff'>
+            <cover-view bindtap='devicetpfn' class='shot-menu-1'>
+              <cover-view class='shot-menu-t dsf jcc'><cover-image class='img' src='{{fz}}'></cover-image></cover-view>
+              <cover-view class='dsf txtcen jcc h32'>翻转</cover-view>
+            </cover-view>
+            <cover-view class='shot-menu-1'>
+              <cover-view class='shot-menu-t dsf jcc'><cover-image class='img' src='{{sgd}}'></cover-image></cover-view>
+              <cover-view class='dsf txtcen jcc h32'>闪光灯</cover-view>
+            </cover-view>
+          </cover-view>
+          <cover-view class='poab b0 l0 w100b'>
+            <cover-view class='pl110 pr110 pore h202'>
+              <cover-view class='h140 dsf jcc'>
+                <cover-view class=''>
+                  <cover-view class='shotyy dsf jcc'>
+                    <cover-image class='img' src='{{shotyy}}'></cover-image>
+                  </cover-view>
+                  <cover-view class='dsf txtcen jcc h32 fz22 colfff'>音乐</cover-view>
+                </cover-view>
+                <cover-view class='pl44 pr44 dsf jcc alc w130 h130'>
+                  <cover-view wx:if='{{offtp==1}}'>
+                    <cover-view bindtap='takePhoto' class='shotbtn'>
+                      <cover-view class='shotbtn-1 dsf jcc alc'>
+                        <cover-view class='shotbtn-b'></cover-view>
+                      </cover-view>
+                    </cover-view>
+                  </cover-view>
+                  <cover-view wx:elif='{{offtp==2}}'>
+                    <cover-view class='shotbtn'>
+                      <cover-view class='shotbtn-2 dsf jcc alc'>
+                        <cover-view class='shotbtn-b'></cover-view>
+                      </cover-view>
+                    </cover-view>
+                  </cover-view>
+                </cover-view>
+                <cover-view class=''>
+                  <cover-view class='shotyy dsf jcc'>
+                    <cover-image class='img' src='{{shotbd}}'></cover-image>
+                  </cover-view>
+                  <cover-view class='dsf txtcen jcc h32 fz22 colfff'>本地</cover-view>
+                </cover-view>
+              </cover-view>
+              <cover-view class='h62 dsf jcc pore colfff fz28 zindex5 trans3 {{offtp == 1 ? "l80" : "lf66"}}'><!--  -->
+                <cover-view class='dsif jcc pore'>
+                  <cover-view bindtap='pztpfn' class='pl40 pr40'>
+                    <cover-view class=''>拍照</cover-view>
+                  </cover-view>
+                  <cover-view bindtap='psptpfn' class='pl40 pr40'>
+                    <cover-view class=''>拍视频</cover-view>
+                  </cover-view>
+                </cover-view>
+              </cover-view>
+              <cover-view class='dsf jcc poab b0 l0 w100b'>
+                <cover-view class='shotdian'></cover-view>
+              </cover-view>
+            </cover-view>
+          </cover-view>
+        </cover-view>
+      </cover-view>
+    </camera>
+  </view>
+</view>
+
+<view wx:if='{{phflag == 2}}' class='pofx l0 t0 w100b h100b'>
+  <view class='w100b h100b pore'>
+    <image class='w100b h100b' src='{{phimg}}'></image>
+    <view class='poab t0 r0 '>123</view>
+  </view>
+</view>
+<!-- <cover-view> -->
+  
+<!-- </cover-view> -->
+

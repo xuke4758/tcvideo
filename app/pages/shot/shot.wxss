@@ -1,0 +1,63 @@
+/* pages/shot/shot.wxss */
+@import '/pages/templates/flex/flex2.wxss';
+.close-shot{
+  /* width: 30rpx;
+  height: 30rpx; */
+}
+.close-shot .img{
+  padding: 24rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.shot-menu{
+  padding: 8rpx 0;
+}
+.shot-menu-1{
+  padding: 16rpx 0;
+}
+.shot-menu-t{
+  width: 108rpx;
+}
+.shot-menu-t .img{
+  width: 60rpx;
+  height: 60rpx;
+}
+.shotyy{
+  padding: 20rpx 44rpx 6rpx;
+}
+.shotyy .img{
+  width: 68rpx;
+  height: 70rpx;
+}
+.shotdian{
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-bottom: 8rpx;
+}
+.shotbtn{
+  
+}
+.shotbtn-1{
+  width: 122rpx;
+  height: 122rpx;
+  border: 2px solid #4a90e2;
+  border-radius: 50%;
+}
+.shotbtn-2{
+  width: 116rpx;
+  height: 116rpx;
+  border: 8rpx solid rgba(74, 144, 226, .5);
+  border-radius: 50%;
+}
+.shotbtn-b{
+  width: 116rpx;
+  height: 116rpx;
+  background-color: #4a90e2;
+  border-radius: 50%;
+}
+.shotbtn-2 .shotbtn-b{
+  width: 102rpx;
+  height: 102rpx;
+}

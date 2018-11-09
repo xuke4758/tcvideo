@@ -1,18 +1,5 @@
 /* pages/viddetail/viddetail.wxss */
 @import '/pages/templates/flex/flex2.wxss';
-page cover-image{
-  width:320px;
-  height:240px;
-  display:inline-block;
-  overflow: inherit;
-}
-page cover-view{
-  display:block;
-  line-height: inherit;
-  overflow: inherit;
-  white-space:normal;
-  pointer-events: inherit;
-}
 .lookman{
   width: 294rpx;
   height: 72rpx;
@@ -56,17 +43,19 @@ page cover-view{
   left: -100rpx;
 }
 .fllow-box{
-  width: 90rpx;
+  width: 180rpx;
+  padding-left: 90rpx;
   padding: 0 24rpx 22rpx 0;
 }
 .fllow-box-zp{
-  width: 90rpx;
+  width: 180rpx;
   height: 90rpx;
+  /* left: -90rpx; */
 }
 .fllow-box-zp-fff{
-  left: 50%;
+  left: 100rpx;
   top: 50%;
-  margin-left: -25rpx;
+  /* margin-left: -25rpx; */
   margin-top: -25rpx;
   width: 50rpx;
   height: 50rpx;
@@ -88,7 +77,10 @@ page cover-view{
 .fllow-box-tx{
   padding-bottom: 40rpx;
 }
-.fllow-box-tx-img{}
+.fllow-box-tx-img{
+  width: 90rpx;
+  height: 112rpx;
+}
 .fllow-box-tx-img .img{
   width: 90rpx;
   height: 90rpx;
@@ -97,12 +89,9 @@ page cover-view{
 .fllow-box-tx-img .img2{
   width: 42rpx;
   height: 42rpx;
-  bottom: -21rpx;
+  bottom: 0;
   left: 50%;
   margin-left: -21rpx;
-}
-.fllow-box-zp-yf{
-
 }
 .fllow-txt-yxyy{
   width: 32rpx;
@@ -166,6 +155,68 @@ input.fllow-pl-bin-input{
 .fllow-li-vi{
   padding: 5rpx 0;
 }
+.videog{
+
+}
+.videok{}
+
+.fllow-box-zptrans{
+  width: 90rpx;
+  height:90rpx;
+  animation:mymove 4.5s linear infinite;
+  -webkit-animation:mymove 4.5s linear infinite;
+}
+@keyframes mymove{
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+.fllow-box-zp-yf{
+  width: 22rpx;
+  height: 20rpx;
+  left: 80rpx;
+  top:30rpx;
+  opacity: 1;
+  animation:yyanima 1.2s linear infinite;
+  -webkit-animation:yyanima 1.2s linear infinite;
+}
+@keyframes yyanima{
+  0% {
+    left:80rpx;
+    top:30rpx;
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  100% {
+    left:45rpx;
+    top:-5rpx;
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+}
+.marquee_text {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+}
+.marqueet{
+  /* animation:marqueet 5s linear infinite; */
+  /* -webkit-animation:marqueet 5s linear infinite; */
+}
+@keyframes marqueet{
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -360rpx;
+  }
+}
+
 
 
 

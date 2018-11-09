@@ -3,99 +3,119 @@
   <view>
     <view class='pofx t0 l0 w100b h100b bgfff'>
       <view class='w100b h100b'>
-        <view class='pore w100b h100b'>
+        <view class='pore w100b' style='height: {{comtflag ? "100%" : comtheit}}'>
           <view class='poab w100b h100b t0 l0'>
-            <video class='w100b h100b' objectFit='fill' src='https://www.tangchaoimg.com/video/x.mp4'></video>
+            <video id='myVideo' class='w100b h100b' bindplay='' show-center-play-btn='{{controls}}' 
+            show-progress='{{controls}}' show-fullscreen-btn='{{controls}}' show-play-btn='{{controls}}'
+            muted='{{controls}}' page-gesture='{{controls}}' enable-progress-gesture='{{controls}}'
+            controls='{{controls}}' autoplay='{{autoplay}}' loop='{{loop}}' objectFit='fill' 
+            src='https://www.tangchaoimg.com/video/x.mp4'></video>
           </view>
         </view>
       </view>
     </view>
   </view>
 </view>
+<view id='marqueet2' class='fz28 dsinline yeswrap'>@郭小姐啊创作的原声</view>
+<!--观看人-->
+<cover-view class='poab t0 l0 zindex10 w100b dsf pt24 dsf jcfe'>
+  <cover-view class='lookman pore'>
+      <cover-view class='pore nowrap zindex10 h100b dsf alc '>
+          <cover-image class='look-tx l1' src='{{s1}}'></cover-image>
+          <cover-image class='look-tx l2' src='{{s2}}'></cover-image>
+          <cover-image class='look-tx l3' src='{{s3}}'></cover-image>
+          <cover-image class='look-tx l4' src='{{s4}}'></cover-image>
+          <cover-image class='look-tx l5' src='{{tx}}'></cover-image>
+      </cover-view>
+      <cover-view class='lookman-mask w100b h100b poab t0 l0 zindex20'>
+          <cover-view class='poab r0 t0 h100b dsf alc zindex15'><cover-view class='dsinline yeswrap fz24 colfff'>500人观看</cover-view> <cover-image class='lookman-xy' src='{{xy}}'></cover-image></cover-view>
+      </cover-view>
+  </cover-view>
+</cover-view>
+<!--观看人-->
+<cover-view hidden='{{!comtflag}}' class='poab w100b h100b t0 l0 zindex5'>
+  <cover-view class='w100b h100b'>
+    <cover-view bindtap='videoplay' class='pore w100b h100b'>
+        
+        <!--右下角-->
+        <cover-view class='fllow-box poab r0 b0'>
+            <cover-view>
+                <cover-view class='w90 fllow-box-tx pore l80'>
+                    <cover-view class='dsf jcc pore fllow-box-tx-img'>
+                        <cover-image class='img' src='{{tx}}'></cover-image>
+                        <cover-image class='poab img2' src='{{gztx}}'></cover-image>
+                    </cover-view>
+                </cover-view>
+                <cover-view class='w90 fllow-box-fx pore l80'>
+                    <cover-view>
+                        <cover-view class='dsf jcc fllow-box-fx-img'><cover-image class='img' src='{{h}}'></cover-image></cover-view>
+                        <cover-view class='dsf jcc txtcen alc h34 fz24 colfff'>12.3w</cover-view>
+                    </cover-view>
+                </cover-view>
+                <cover-view class='w90 fllow-box-fx pore l80'>
+                    <cover-view bindtap='comtclick'>
+                        <cover-view class='dsf jcc fllow-box-fx-img'><cover-image class='img' src='{{pl}}'></cover-image></cover-view>
+                        <cover-view class='dsf jcc txtcen alc h34 fz24 colfff'>123</cover-view>
+                    </cover-view>
+                </cover-view>
+                <cover-view class='w90 fllow-box-fx pore l80'>
+                    <cover-view>
+                        <cover-view class='dsf jcc fllow-box-fx-img'><cover-image class='img' src='{{sc}}'></cover-image></cover-view>
+                        <cover-view class='dsf jcc txtcen alc h34 fz24 colfff'>123</cover-view>
+                    </cover-view>
+                </cover-view>
+                <cover-view class='w90 fllow-box-fx30 pore l80'>
+                    <cover-view>
+                        <cover-view class='dsf jcc fllow-box-fx-img'><cover-image class='img' src='{{fx}}'></cover-image></cover-view>
+                        <cover-view class='dsf jcc txtcen alc h34 fz24 colfff'>123</cover-view>
+                    </cover-view>
+                </cover-view>
+                <cover-view class='w90 fllow-box-zp pore'>
+                    <cover-image class='fllow-box-zptrans pore l80' src='{{zp}}'></cover-image>
+                    <cover-view class='fllow-box-zp-fff poab bgfff'></cover-view>
+                    <cover-image class='fllow-box-zp-yf poab l0 t0 zindex5' src='{{zpyf}}'></cover-image>
+                </cover-view>
+            </cover-view>
+        </cover-view>
+        <!--右下角-->
+        <!--左下角-->
+        <cover-view class='fllow-txt poab b0 l0 colfff'>
+            <cover-view class='fllow-txt-cot'>
+                <cover-view>
+                    <cover-view class='pb18 fz32'>@猫爸成长日记</cover-view>
+                    <cover-view class='pb18 fz32'>记录宝宝的美好瞬间</cover-view>
+                    <cover-view class='dsf alc h40 nowrap'>
+                        <cover-image class='fllow-txt-yxyy' src='{{yxyy}}'></cover-image>
+                        <cover-view class='fz28 w222 h40 overhide pore'>
+                            <!-- <cover-view style='{{orientation}}:{{marqueeDistance2}}px;' class='marqueet nowrap poab h100b'> -->
+                              <cover-view class='marquee_text' style='{{orientation}}:{{marqueeDistance2}}px;'>
+                                <cover-view id='marqueet' class='dsinline nowrap'>@郭小姐啊创作的原声</cover-view>
+                                <cover-view wx:if='{{marquee2copy_status}}' class='dsinline nowrap' style='margin-left:{{marquee2_margin}}px;'>@郭小姐啊创作的原声</cover-view>
+                              </cover-view>
+                              
+                            <!-- </cover-view> -->
+                        </cover-view>
+                    </cover-view>
+                </cover-view>
+            </cover-view>
+        </cover-view>
+        <!--左下角-->
+    </cover-view>
+  </cover-view>
+</cover-view>
 
-<view class='poab w100b h100b t0 l0 zindex5'>
+<comment comtflag='{{comtflag}}'  bindcomtclose="oncomtclose"></comment>
+
+<!-- <view class='poab w100b h100b t0 l0 zindex5'>
     <view class='w100b h100b'>
-        <view class='pore w100b h100b'>
-            <!--观看人-->
-            <view class='dsf pt24 dsf jcfe'>
-                <view class='lookman pore'>
-                    <view class='pore nowrap zindex10 h100b dsf alc '>
-                        <image class='look-tx l1' src='{{s1}}'></image>
-                        <image class='look-tx l2' src='{{s2}}'></image>
-                        <image class='look-tx l3' src='{{s3}}'></image>
-                        <image class='look-tx l4' src='{{s4}}'></image>
-                        <image class='look-tx l5' src='{{tx}}'></image>
-                    </view>
-                    <view class='lookman-mask w100b h100b poab t0 l0 zindex20'>
-                        <view class='poab r0 t0 h100b dsf alc zindex15'><view class='dsinline yeswrap fz24 colfff'>500人观看</view> <image class='lookman-xy' src='{{xy}}'></image></view>
-                    </view>
-                </view>
-            </view>
-            <!--观看人-->
-            <!--右下角-->
-            <view class='fllow-box poab r0 b0'>
-                <view>
-                    <view class='fllow-box-tx'>
-                        <view class='dsf jcc pore fllow-box-tx-img'>
-                            <image class='img' src='{{tx}}'></image>
-                            <image class='poab img2' src='{{gztx}}'></image>
-                        </view>
-                    </view>
-                    <view class='fllow-box-fx'>
-                        <view>
-                            <view class='dsf jcc fllow-box-fx-img'><image class='img' src='{{h}}'></image></view>
-                            <view class='dsf jcc alc h34 fz24 colfff'>12.3w</view>
-                        </view>
-                    </view>
-                    <view class='fllow-box-fx'>
-                        <view>
-                            <view class='dsf jcc fllow-box-fx-img'><image class='img' src='{{pl}}'></image></view>
-                            <view class='dsf jcc alc h34 fz24 colfff'>123</view>
-                        </view>
-                    </view>
-                    <view class='fllow-box-fx'>
-                        <view>
-                            <view class='dsf jcc fllow-box-fx-img'><image class='img' src='{{sc}}'></image></view>
-                            <view class='dsf jcc alc h34 fz24 colfff'>123</view>
-                        </view>
-                    </view>
-                    <view class='fllow-box-fx30'>
-                        <view>
-                            <view class='dsf jcc fllow-box-fx-img'><image class='img' src='{{fx}}'></image></view>
-                            <view class='dsf jcc alc h34 fz24 colfff'>123</view>
-                        </view>
-                    </view>
-                    <view class='fllow-box-zp pore'>
-                        <image class='w100b h100b' src='{{zp}}'></image>
-                        <view class='fllow-box-zp-fff poab bgfff'></view>
-                        <!-- <image class='fllow-box-zp-yf poab' src='{{zpyf}}'></image> -->
-                    </view>
-                </view>
-            </view>
-            <!--右下角-->
-            <!--左下角-->
-            <view class='fllow-txt poab b0 l0 colfff'>
-                <view class='fllow-txt-cot'>
-                    <view>
-                        <view class='pb18 fz32'>@猫爸成长日记</view>
-                        <view class='pb18 fz32'>记录宝宝的美好瞬间</view>
-                        <view class='dsf alc h40 nowrap'>
-                            <image class='fllow-txt-yxyy' src='{{yxyy}}'></image>
-                            <view class='fz28 w222 h40 overhide pore'>
-                                <view class='nowrap poab h100b' style='left: -18px;'>@郭小姐啊创作的原声</view>
-                            </view>
-                        </view>
-                    </view>
-                </view>
-            </view>
-            <!--左下角-->
+        <view class='pore w100b h100b'> -->
             <!--评论区-->
-            <view class='poab l0 b0 w100b zindex100 fllow-pl'>
+            <view hidden class='poab l0 b0 w100b zindex100 fllow-pl'>
                 <view class='w100b h100b'>
                     <view class='pore w100b h100b'>
                         <view class='h74 dsf alc jcc pore'>
                             <view class='colfff fz24'>56评论</view>
-                            <view class='poab r0 t0 dsf alc jcc fllow-pl-close h100b'><image class='img' src='{{close}}'></image></view>
+                            <view bindtap='comtclose' class='poab r0 t0 dsf alc jcc fllow-pl-close h100b'><image class='img' src='{{close}}'></image></view>
                         </view>
                         <scroll-view class='fllow-pl-scroll' scroll-y>
                             <view class='fllow-list'>
@@ -184,6 +204,6 @@
                 </view>
             </view>
             <!--评论区-->
-        </view>
+        <!-- </view>
     </view>
-</view>
+</view> -->

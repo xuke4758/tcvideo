@@ -1,3 +1,17 @@
+page cover-image{
+  width:320px;
+  height:240px;
+  display:inline-block;
+  overflow: inherit;
+  pointer-events: inherit;
+}
+page cover-view{
+  display:block;
+  line-height: inherit;
+  overflow: initial;
+  white-space:normal;
+  pointer-events: inherit;
+}
 .twohide,.twoHide{
   display:-webkit-box;
   -webkit-box-orient:vertical;
@@ -32,6 +46,9 @@
 }
 .jcc{
   justify-content: center;
+}
+.txtcen{
+  text-align: center;
 }
 .jcsb{
   justify-content: space-between;
@@ -134,6 +151,9 @@
 }
 .h72{
   height: 72rpx;
+}
+.h140{
+  height: 140rpx;
 }
 .w80b{
   width: 80%;
@@ -263,7 +283,7 @@
   top: 72rpx;
 }
 .zindex5{
-  z-index: 50;
+  z-index: 5;
 }
 .zindex10{
   z-index: 10;
@@ -326,6 +346,12 @@
 .w60{
   width: 60rpx;
 }
+.w80{
+  width: 80rpx;
+}
+.w90{
+  width: 90rpx;
+}
 .col32{
   color: #323232;
 }
@@ -373,4 +399,67 @@
 }
 .w560{
   width: 560rpx;
+}
+.l80{
+  left: 80rpx;
+}
+.pd10{
+  padding: 10rpx;
+}
+.pd15{
+  padding: 15rpx;
+}
+.pl110{
+  padding-left: 110rpx;
+}
+.pr110{
+  padding-right: 110rpx;
+}
+.h32{
+  height: 32rpx;
+}
+.h202{
+  height: 202rpx;
+}
+.ml80{
+  margin-left: 80rpx;
+}
+.mr80{
+  margin-right: 80rpx;
+}
+.ml40{
+  margin-left: 40rpx;
+}
+.mr40{
+  margin-right: 40rpx;
+}
+.pl40{
+  padding-left: 40rpx;
+}
+.pr40{
+  padding-right: 40rpx;
+}
+.h62{
+  height: 62rpx;
+}
+.l80{
+  left: 80rpx;
+}
+.lf66{
+  left: -66rpx;
+}
+.trans3{
+  transition: all .3s linear;
+}
+.pl44{
+  padding-left: 44rpx;
+}
+.pr44{
+  padding-right: 44rpx;
+}
+.w130{
+  width: 130rpx;
+}
+.h130{
+  height: 130rpx;
 }

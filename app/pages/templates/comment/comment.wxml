@@ -1,0 +1,94 @@
+<!--pages/templates/comment/comment.wxml-->
+<view hidden='{{comtflag}}' class='poab l0 b0 w100b zindex100 fllow-pl'>
+  <view class='w100b h100b'>
+      <view class='pore w100b h100b'>
+          <view class='h74 dsf alc jcc pore'>
+              <view class='colfff fz24'>56评论</view>
+              <view bindtap='comtclose' class='poab r0 t0 dsf alc jcc fllow-pl-close h100b'><image class='img' src='{{close}}'></image></view>
+          </view>
+          <scroll-view class='fllow-pl-scroll' scroll-y>
+              <view class='fllow-list'>
+                  <view class='fllow-li'>
+                      <view class='pl24 pr24 dsf jcsb'>
+                          <view class='w640'>
+                              <view class='dsf'>
+                                  <view class='fllow-li-tx dsif alc'><image class='img' src='{{tx}}'></image></view>
+                                  <view class='w560'>
+                                      <view class='h34 pb3 dsf alc fz24 colfff op5'>@啊啦啦啦啦啦</view>
+                                      <view class='fz24 dsif alb colfff lh34'>
+                                          <view class='dsinline yeswrap'>宝宝好可爱啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊...<view class='dsinline yeswrap fz24 col32 pore t2'>更多</view> <view class='dsinline yeswrap fz22 col80 op5 pore t2 ml19'>1小时前</view> 
+                                          </view> 
+                                      </view>
+                                      <view class='fllow-li-vice blfff2'>
+                                          <view class='fllow-li-vi'>
+                                              <view class='lh28 fz20 colfff op5'>@幺</view>
+                                              <view class='lh28 fz20 colfff'>
+                                                  <view class='dsinline yeswrap'>来看看儿子来看看儿子来看看儿子来看看儿子来看看儿子来看看儿子...<view class='dsinline yeswrap fz20 col32 pore t2'>更多</view> 
+                                                  </view> 
+                                              </view>
+                                          </view>
+                                          <view class='pt10 pb5'>
+                                              <view class='fz20 colfff'>更多回复（7）</view>
+                                          </view>
+                                          <!-- <view class='fllow-li-vi'>
+                                            <view class='lh28 fz20 colfff op5'>@幺<view class='dsinline yeswrap ml16 me16 fz20 colfff op8'>回复</view> </view>
+                                            <view class='lh28 fz20 colfff'>
+                                              <view class='dsinline yeswrap'>来看看儿子来看看儿子来看看儿子来看看儿子来看看儿子来看看儿子...<view class='dsinline yeswrap fz20 col32 pore t2'>更多</view> 
+                                              </view> 
+                                            </view>
+                                          </view>
+                                          <view class='fllow-li-vi'>
+                                            <view class='lh28 fz20 colfff op5'>@幺</view>
+                                            <view class='lh28 fz20 colfff'>
+                                              <view class='dsinline yeswrap'>来看看儿子来看看儿子来看看儿子来看看儿子来
+                                              </view> 
+                                            </view>
+                                          </view> -->
+                                      </view>
+                                  </view>
+                              </view>
+                          </view>
+                          <view class='w60'>
+                              <view class='w100b'>
+                                  <view class='fllow-li-xh dsf jcc alc'><image class='img' src='{{hua}}'></image></view>
+                                  <!-- <view><image src='{{hua_a}}'></image></view> -->
+                                  <view class='fz22 colfff dsf jcc nowrap'>12</view>
+                              </view>
+                          </view>
+                      </view>
+                  </view>
+                  <view class='fllow-li'>
+                      <view class='pl24 pr24 dsf jcsb'>
+                          <view class='w640'>
+                              <view class='dsf'>
+                                  <view class='fllow-li-tx dsif alc'><image class='img' src='{{tx}}'></image></view>
+                                  <view class=''>
+                                      <view class='h34 pb3 dsf alc fz24 colfff op5'>@啊啦啦啦啦啦</view>
+                                      <view class='fz24 dsif alb colfff lh34'>
+                                          <view class='dsinline yeswrap'>宝宝好可爱啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊...<view class='dsinline yeswrap fz24 col32 pore t2'>更多</view> <view class='dsinline yeswrap fz22 col80 op5 pore t2 ml19'>1小时前</view> </view> 
+                                      </view>
+                                  </view>
+                              </view>
+                          </view>
+                          <view class='w60'>
+                              <view class='w100b'>
+                                  <view class='fllow-li-xh dsf jcc alc'><image class='img' src='{{hua}}'></image></view>
+                                  <!-- <view><image src='{{hua_a}}'></image></view> -->
+                                  <view class='fz22 colfff dsf jcc nowrap'>12</view>
+                              </view>
+                          </view>
+                      </view>
+                  </view>
+              </view>
+          </scroll-view>
+          <!-- <form> -->
+              <view class='poab b0 l0 w100b fllow-pl-bin'>
+                  <view class='dsf alc jcsb h100b'>
+                      <view class='plr36 h100b'><input class='h100b fllow-pl-bin-input' placeholder-class='fllow-pl-bin-input-pl' placeholder='快，说点好听的…'></input></view>
+                      <view class=' dsif alc jcc w112 h100b fz32 col4a90e2'>发送</view>
+                  </view>
+              </view>
+          <!-- </form> -->
+      </view>
+  </view>
+</view>

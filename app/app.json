@@ -7,7 +7,8 @@
     "pages/rili/rili",
     "pages/search/index",
     "pages/search/toground",
-    "pages/viddetail/viddetail"
+    "pages/viddetail/viddetail",
+    "pages/shot/shot"
   ],
   "window": {
     "backgroundTextStyle": "dark",
