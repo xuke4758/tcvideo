@@ -101,6 +101,9 @@ page cover-view{
 .colfff5{
   color: rgba(255, 255, 255, .5);
 }
+.colfff4{
+  color: rgba(255, 255, 255, .4);
+}
 .colfff10{
   color: rgba(255, 255, 255, 1);
 }
@@ -136,6 +139,9 @@ page cover-view{
 }
 .h70{
   height: 70rpx;
+}
+.h86{
+  height: 86rpx;
 }
 .h80{
   height: 80rpx;
@@ -327,6 +333,9 @@ page cover-view{
 .w222{
   width: 222rpx;
 }
+.w120{
+  width: 120rpx;
+}
 .h40{
   height: 40rpx;
 }
@@ -462,4 +471,58 @@ page cover-view{
 }
 .h130{
   height: 130rpx;
+}
+.t24{
+  top: 24rpx;
+}
+.t16{
+  top: 16rpx;
+}
+.r24{
+  right: 24rpx;
+}
+.pb28{
+  padding-bottom: 28rpx;
+}
+.h90{
+  height: 90rpx;
+}
+.h180{
+  height: 180rpx;
+}
+.bg0004{
+  background-color: rgba(0, 0, 0, .4);
+}
+.colccc{
+  color: #ccc;
+}
+.h250{
+  height: 250rpx;
+}
+.h200{
+  height: 200rpx;
+}
+.w200{
+  width: 200rpx;
+}
+.w140{
+  width: 140rpx;
+}
+.h140{
+  height: 140rpx;
+}
+.bb333{
+  border-bottom: 1px solid #333;
+}
+.pb24{
+  padding-bottom: 24rpx;
+}
+.pb12{
+  padding-bottom: 12rpx;
+}
+.ml24{
+  margin-left: 24rpx;
+}
+.b4{
+  bottom: 4rpx;
 }

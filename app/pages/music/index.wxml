@@ -1,0 +1,74 @@
+<!--pages/music/index.wxml-->
+<view>
+  <view class='pl24 pr24'>
+    <view class='dsf bbfff2 search-m'>
+      <view class='search-in dsf'><input class='w100b h100b fz28 colfff' placeholder-class='col80' placeholder='搜索歌曲名称'></input></view>
+      <view class='search-img dsif alc jcfe'><image class='img op8' src='{{searchimg}}'></image></view>
+    </view>
+  </view>
+  <view class='pb12'>
+    <view class='music-list dsf colfff fz26'>
+      <view class='music-li fg1'>
+        <view class='music-li-img dsf jcc'><image class='img' src='{{tx}}'></image></view>
+        <view class='dsf jcc alc h72'>热歌榜</view>
+      </view>
+      <view class='music-li fg1'>
+        <view class='music-li-img dsf jcc'><image class='img' src='{{tx}}'></image></view>
+        <view class='dsf jcc alc h72'>飙升榜</view>
+      </view>
+      <view class='music-li fg1'>
+        <view class='music-li-img dsf jcc'><image class='img' src='{{tx}}'></image></view>
+        <view class='dsf jcc alc h72'>经典</view>
+      </view>
+      <view class='music-li fg1'>
+        <view class='music-li-img dsf jcc'><image class='img' src='{{tx}}'></image></view>
+        <view class='dsf jcc alc h72'>原创</view>
+      </view>
+    </view>
+    <view class='music-list dsf colfff fz26'>
+      <view class='music-li fg1'>
+        <view class='music-li-img dsf jcc'><image class='img' src='{{tx}}'></image></view>
+        <view class='dsf jcc alc h72'>流行</view>
+      </view>
+      <view class='music-li fg1'>
+        <view class='music-li-img dsf jcc'><image class='img' src='{{tx}}'></image></view>
+        <view class='dsf jcc alc h72'>影视</view>
+      </view>
+      <view class='music-li fg1'>
+        <view class='music-li-img dsf jcc'><image class='img' src='{{tx}}'></image></view>
+        <view class='dsf jcc alc h72'>日韩</view>
+      </view>
+      <view class='music-li fg1'>
+        <view class='music-li-img dsf jcc'><image class='img' src='{{tx}}'></image></view>
+        <view class='dsf jcc alc h72'>欧美</view>
+      </view>
+    </view>
+  </view>
+  <view class='pl24 pr24'>
+    <view class='dsf h86 btfff2 fz30 '>
+      <view bindtap='musictyfn' data-type='1' class='fg1 dsif alc jcc {{musicty == 1 ? "colfff" : "col80"}}'>热门歌曲</view>
+      <view bindtap='musictyfn' data-type='2' class='fg1 dsif alc jcc {{musicty == 2 ? "colfff" : "col80"}}'>我的收藏</view>
+    </view>
+  </view>
+  <view class='music-yy-list'>
+    <view class='music-yy-li'>
+      <view class='pl24 pr24 dsf jcsb'>
+        <view class='dsf'>
+          <view class=' music-yy-li-img pore'>
+            <image class='w100b h100b' src='{{tx}}'></image>
+            <image class='poab music-yy-li-img-bf' src='{{bft}}'></image>
+            <image class='poab music-yy-li-img-bf' src='{{ztt}}'></image>
+          </view>
+          <view class='ml24 pore h100b'>
+            <view class='h40 fz28 colfff'>甜蜜的温度</view>
+            <view class='h34 fz24 col80'>EVANE</view>
+            <view class='poab l0 b4 h34 fz24 col80'>00:43</view>
+          </view>
+        </view>
+        <view class='colfff'>
+          <image class='music-yy-li-xing' src='{{xing}}'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

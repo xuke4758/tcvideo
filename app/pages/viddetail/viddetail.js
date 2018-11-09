@@ -75,7 +75,6 @@ Page({
           marquee2copy_status: vm.data.length + vm.data.marqueeDistance2 <= vm.data.windowWidth + vm.data.marquee2_margin,
         });
       } else {
-        console.log(vm.data.marqueeDistance2 - vm.data.marqueePace);
         if (-vm.data.marqueeDistance2 >= vm.data.marquee2_margin) { // 当第二条文字滚动到最左边时
           vm.setData({
             marqueeDistance2: vm.data.marquee2_margin // 直接重新滚动

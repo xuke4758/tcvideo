@@ -8,7 +8,9 @@
     "pages/search/index",
     "pages/search/toground",
     "pages/viddetail/viddetail",
-    "pages/shot/shot"
+    "pages/shot/shot",
+    "pages/search/topic",
+    "pages/music/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",

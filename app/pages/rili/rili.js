@@ -9,7 +9,13 @@ Page({
     marquee2_margin: 60,
     size: 14,
     orientation: 'left',//滚动方向
-    interval: 80 // 时间间隔
+    interval: 80, // 时间间隔
+    covertp: 2
+  },
+  click_cover(){
+    this.setData({
+      covertp: this.data.covertp == 1 ? 2 : 1
+    });
   },
   onShow: function () {
     // 页面显示

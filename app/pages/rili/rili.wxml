@@ -15,3 +15,26 @@
     </view>
   </view>
 </view>
+
+<view class="box">
+    <view class="inner">
+        <span>Hello World</span>
+    </view>
+    <view class="inner">
+        <span>Hello World</span>
+    </view>
+</view>
+<!-- <view class='poab w100b h100b t0 l0 zindex5'>
+  <camera class='w100b h100b' device-position="{{devicetp}}" flash="auto" binderror="error">
+    <cover-view class='quan dsf alc jcc pore'>
+      <cover-view class='quan-k'></cover-view>
+      <cover-view class='poab w200 h200 dsf alc jcc'><cover-view class='k'></cover-view></cover-view>
+    </cover-view>
+  </camera>
+</view> -->
+<!-- <cover-view class='pofx t0 l0 w100b h100b bgfff'>
+  <cover-view>
+    <cover-view class='pore cover-txt trans3 {{covertp == 1 ? "cover-txt2" : ""}}'>123456789qwerttyuuiio</cover-view>
+    <cover-view bindtap='click_cover' class='cover-btn'>点击我</cover-view>
+  </cover-view>
+</cover-view> -->
