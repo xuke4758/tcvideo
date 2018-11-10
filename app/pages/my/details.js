@@ -1,37 +1,11 @@
-// pages/my/index.js
+// pages/my/details.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    "abc": false,
-    "arrAll": [
-      {
-        "name": "黑色大叔",
-        "url": "../../assets/touxiang1.jpeg"
-      },
-      {
-        "name": "郭小姐啊",
-        "url": "../../assets/touxiang2.jpeg"
-      },
-      {
-        "name": "_哥斯拉啊大大",
-        "url": "../../assets/touxiang3.jpeg"
-      },
-      {
-        "name": "Lucky",
-        "url": "../../assets/touxiang4.jpg"
-      },
-      {
-        "name": "白色恋曲",
-        "url": "../../assets/touxiang1.jpeg"
-      },
-      {
-        "name": "白色恋曲",
-        "url": "../../assets/touxiang2.jpeg"
-      }
-    ]
+
   },
 
   /**

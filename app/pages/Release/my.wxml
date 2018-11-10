@@ -1,0 +1,7 @@
+<!--谁可以看见-->
+<view class="open">
+  <view class='open-i' wx:for="{{my}}" data-name='{{item.name}}' bindtap='my'>
+    <view>{{item.name}}</view>
+    <view>{{item.kan}}</view>
+  </view>
+</view>

@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/my/index",
+    "pages/my/details",    
     "pages/index/city",
     "pages/maodian/maodian",
     "pages/rili/rili",
@@ -10,7 +11,13 @@
     "pages/viddetail/viddetail",
     "pages/shot/shot",
     "pages/search/topic",
-    "pages/music/index"
+    "pages/music/index",
+    "pages/find/find",
+    "pages/Release/Release",
+    "pages/Release/age",
+    "pages/Release/my",
+    "pages/Release/address",
+    "pages/personal/personal"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -43,7 +50,7 @@
         "selectedIconPath": "./asset/a3.png"
       },
       {
-        "pagePath": "pages/my/index",
+        "pagePath": "pages/find/find",
         "text": "发现",
         "iconPath": "./asset/a4.png",
         "selectedIconPath": "./asset/a4_a.png"

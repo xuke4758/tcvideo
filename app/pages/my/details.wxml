@@ -1,0 +1,13 @@
+<view class='My-zo'>
+  <view class='My-git'>
+    <view class='My-flex'>
+      <view class='My-image'>
+        <image src='../../assets/touxiang1.jpeg'></image>
+      </view>
+      <view class='My-text'>黑色大叔</view>
+    </view>
+    <view class='My-geng'>
+      <image src='../../assets/More.png'></image>
+    </view>
+  </view>
+</view>

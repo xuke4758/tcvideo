@@ -1,46 +1,44 @@
-// pages/my/index.js
+// pages/Release/my.js
+import base from '../../config/base.js'
+import Router from '../../utils/router.js'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    "abc": false,
-    "arrAll": [
+    "my": [
       {
-        "name": "黑色大叔",
-        "url": "../../assets/touxiang1.jpeg"
+        "name": "公开",
+        "kan": "所有人可见"
       },
       {
-        "name": "郭小姐啊",
-        "url": "../../assets/touxiang2.jpeg"
+        "name": "好友可见",
+        "kan": "互相关注好友可见"
       },
       {
-        "name": "_哥斯拉啊大大",
-        "url": "../../assets/touxiang3.jpeg"
+        "name": "私密",
+        "kan": "仅自己"
       },
-      {
-        "name": "Lucky",
-        "url": "../../assets/touxiang4.jpg"
-      },
-      {
-        "name": "白色恋曲",
-        "url": "../../assets/touxiang1.jpeg"
-      },
-      {
-        "name": "白色恋曲",
-        "url": "../../assets/touxiang2.jpeg"
-      }
-    ]
+    ],
+    "name": "",
+    "abc": "holle"
   },
-
+  my(e) {
+    this.setData({
+      name: e.currentTarget.dataset.name
+    })
+    Router.go("Release")
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
   },
-
+  onShow: (res) => {
+    // console.log(this.name)
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

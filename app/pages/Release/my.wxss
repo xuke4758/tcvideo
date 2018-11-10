@@ -1,0 +1,17 @@
+/* pages/Release/my.wxss */
+.open{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 24rpx;
+}
+.open .open-i{
+  padding: 18rpx 0;
+  color: #fff;
+}
+.open .open-i view:nth-child(1){
+  font-size: 33rpx;
+}
+.open .open-i view:nth-child(2){
+  font-size: 27rpx;
+  color: #989898;
+}

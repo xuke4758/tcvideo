@@ -1,0 +1,51 @@
+<!-- 个人详情 -->
+<view class='personal'>
+  <view class='presonal-object'>
+    <!-- 头像 -->
+    <view class='presonal-image'>
+      <image src='../../assets/touxiang1.jpeg'></image>
+    </view>
+    <view class='presonal-news' style='color:#fff'>
+      <!-- 关注等等 -->
+      <view class='presonal-object-1'>
+        <view>
+          <view class='presonal-num'>123</view>
+          <view class='guanzu'>关注</view>
+        </view>
+        <view>
+          <view class='presonal-num'>123</view>
+          <view class='guanzu'>粉丝</view>
+        </view>
+        <view>
+          <view class='presonal-num'>123</view>
+          <view class='guanzu'>获赞与收藏</view>
+        </view>
+      </view>
+      <!-- 按钮 -->
+      <view class='item-btn' style='color:#fff' wx:if="{{abc==false}}">
+        <button class="guanzu-btn" bindtap='follow_ren'  data-show='false'>关注</button>
+        <view>
+          <!-- <image class='image-1c' src='../../assets/presonal.png'></image> -->
+          <image class='image-2' src='../../assets/feng.png'></image>
+        </view>
+      </view>
+      <view class='item-btn' style='color:#fff' wx:if="{{abc==true}}" >
+        <button class="guanzu-btn xinxi" bindtap='follow_ren' data-show='true'>发消息</button>
+        <view>
+          <image class='image-1' src='../../assets/presonal.png'></image>
+          <image class='image-2' src='../../assets/feng.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='presonal-text' style='color:#fff;'>
+    <view class='presonal-text-a'><image style='width:19.8rpx;height:19.8rpx;' src='../../assets/女.png'></image> <text class='abc' style='color:#333333;font-size:18rpx'>|</text><text style='font-size:22rpx;'>北京</text></view>
+    <view class='presonal-text-b'>这里都是用户的个人简介，最多两行，字数你们自己设置吧，小伙子们</view>    
+  </view>
+
+  <!-- 作品和喜欢 -->
+  <view class='vid'>
+    <view class='{{zuo==true?"zuoping":"xihuan"}}' bindtap='zuoping'>作品</view>
+    <view  class='{{zuo==true?"xihuan":"zuoping"}}' bindtap='xihuan'>喜欢</view>
+  </view>
+</view>

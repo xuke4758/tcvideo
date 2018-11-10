@@ -1,35 +1,25 @@
-// pages/my/index.js
+// pages/Release/age.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    "abc": false,
-    "arrAll": [
+    "age": [
       {
-        "name": "黑色大叔",
-        "url": "../../assets/touxiang1.jpeg"
+        "nian": "0~1"
       },
       {
-        "name": "郭小姐啊",
-        "url": "../../assets/touxiang2.jpeg"
+        "nian": "1~3"
       },
       {
-        "name": "_哥斯拉啊大大",
-        "url": "../../assets/touxiang3.jpeg"
+        "nian": "3~6"
       },
       {
-        "name": "Lucky",
-        "url": "../../assets/touxiang4.jpg"
+        "nian": "6~12"
       },
       {
-        "name": "白色恋曲",
-        "url": "../../assets/touxiang1.jpeg"
-      },
-      {
-        "name": "白色恋曲",
-        "url": "../../assets/touxiang2.jpeg"
+        "nian": "12~18"
       }
     ]
   },

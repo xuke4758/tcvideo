@@ -1,44 +1,42 @@
-// pages/my/index.js
+// pages/personal/personal.js
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-    "abc": false,
-    "arrAll": [
-      {
-        "name": "黑色大叔",
-        "url": "../../assets/touxiang1.jpeg"
-      },
-      {
-        "name": "郭小姐啊",
-        "url": "../../assets/touxiang2.jpeg"
-      },
-      {
-        "name": "_哥斯拉啊大大",
-        "url": "../../assets/touxiang3.jpeg"
-      },
-      {
-        "name": "Lucky",
-        "url": "../../assets/touxiang4.jpg"
-      },
-      {
-        "name": "白色恋曲",
-        "url": "../../assets/touxiang1.jpeg"
-      },
-      {
-        "name": "白色恋曲",
-        "url": "../../assets/touxiang2.jpeg"
-      }
-    ]
+    abc: false,
+    zuo: true
   },
-
+  follow_ren(e) {
+    console.log(e.currentTarget.dataset.show)
+    var show = e.currentTarget.dataset.show
+    if (show == "false") {
+      this.setData({
+        abc: true
+      })
+    } else {
+      this.setData({
+        abc: false
+      })
+    }
+  },
+  zuoping() {
+    this.setData({
+      zuo: true
+    })
+  },
+  xihuan() {
+    this.setData({
+      zuo: false
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.setNavigationBarTitle({
+      title: '草莓冰团子',
+    })
   },
 
   /**

@@ -1,0 +1,65 @@
+<!-- 发布 -->
+<view class='view'>
+  <view class='Release'>
+    <view class='Release-biao'>
+      <textarea bindblur="bindTextAreaBlur" show-confirm-bar="{{false}}" maxlength="50" placeholder="写标题并使用适合的话题，能让更多人看到~" class='Release-textarea' />
+      <view class='Release-h'>
+        <view>#
+          <text>话题</text>
+        </view>
+        <view>@
+          <text>好友</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='age-address' bindtap='address'>
+    <view class='age-image'>
+      <image src='../../assets/ding.png'></image>
+      <text>添加位置</text>
+    </view>
+    <view class='age-image-1'>
+      <image src='../../assets/More.png'></image>
+    </view>
+  </view>
+  <view class='age-dz'>
+    <view>北京发布萨法不分开就发发几款</view>
+    <view>发生反射看法芙娜开发反馈妇女</view>
+    <view>天辰大厦</view>
+  </view>
+  <view class='age-address' bindtap='age'>
+    <view class='age-image'>
+      <image src='../../assets/ding.png'></image>
+      <text>宝宝年龄</text>
+    </view>
+    <view class='age-image-1'>
+      <text style="color:#808080;font-size:26rpx;padding-right:20rpx">请选择</text>
+      <image src='../../assets/More.png'></image>
+    </view>
+  </view>
+  <view class='age-address'>
+    <view class='age-image'>
+      <image src='../../assets/ding.png'></image>
+      <text>宝宝性别</text>
+    </view>
+    <view class='age-image-1'>
+      <radio-group class="radio-group" bindchange="radioChange" style="color:#fff;font-size:26rpx">
+        <radio class='radio' color='#4A90E2' value="{{item.name}}" checked="true"/><text>男</text>
+        <radio class='radio' color='#4A90E2' value="{{item.name}}" checked="{{item.checked}}"/><text>女</text>
+      </radio-group>
+    </view>
+  </view>
+  <view class='age-address' bindtap='show'>
+    <view class='age-image'>
+      <image src='../../assets/ding.png'></image>
+      <text>谁可以看</text>
+    </view>
+    <view class='age-image-1'>
+      <text style="color:#808080;font-size:26rpx;padding-right:20rpx">公开</text>
+      <image src='../../assets/More.png'></image>
+    </view>
+  </view>
+  <view class='btn-b'>
+    <button class="btn" bindtap='btn'>发布</button>
+  </view>
+</view>

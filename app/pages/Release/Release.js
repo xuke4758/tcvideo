@@ -1,43 +1,40 @@
-// pages/my/index.js
+// pages/Release/Release.js
+import base from '../../config/base.js'
+import Router from '../../utils/router.js'
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-    "abc": false,
-    "arrAll": [
-      {
-        "name": "黑色大叔",
-        "url": "../../assets/touxiang1.jpeg"
-      },
-      {
-        "name": "郭小姐啊",
-        "url": "../../assets/touxiang2.jpeg"
-      },
-      {
-        "name": "_哥斯拉啊大大",
-        "url": "../../assets/touxiang3.jpeg"
-      },
-      {
-        "name": "Lucky",
-        "url": "../../assets/touxiang4.jpg"
-      },
-      {
-        "name": "白色恋曲",
-        "url": "../../assets/touxiang1.jpeg"
-      },
-      {
-        "name": "白色恋曲",
-        "url": "../../assets/touxiang2.jpeg"
-      }
-    ]
-  },
 
+  },
+  address() {
+    Router.go('address')
+    // Router.go('address.method')
+  },
+  age() {
+    Router.go('age');
+  },
+  show() {
+    Router.go('show');
+  },
+  btn(e) {
+    wx.showToast({
+      title: '发布成功',
+      icon: 'success',
+      duration: 2000,
+      success: (res) => {
+        console.log("成功")
+      },
+      fail: (res) => {
+        console.log("失败")
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function (query) {
 
   },
 
@@ -52,7 +49,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    console.log(Router.p)
   },
 
   /**

@@ -1,0 +1,26 @@
+.address{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 24rpx;
+}
+.address .address-image{
+  width: 45rpx;
+  height: 45rpx;
+  margin-right: 19rpx;
+}
+.address .address-img{
+  width: 20rpx;
+  height: 20rpx;
+  margin-left: 20rpx;
+}
+.address .address-input{
+  padding: 16rpx;
+  border-bottom: 2rpx solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+}
+.address .address-show{
+  color: #808080;
+  font-size: 22rpx;
+  line-height: 50rpx;
+}
