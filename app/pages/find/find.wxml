@@ -1,0 +1,41 @@
+<!-- 发现 -->
+<view class='find'>
+  <view class='find-input'>
+    <image src='../../assets/shou.png'></image>
+    <input placeholder="产后减肥" bindinput/>
+  </view>
+  <view class='find-swiper'>
+    <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="{{color}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item class="find-item">
+          <image src="{{item}}" class="slide-image" width="355" height="150" mode="aspectFill" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
+
+<!-- 分类 -->
+<view class='class-item' wx:for="{{abc}}">
+  <view class='class-top'>
+    <view class='class-left'>
+      <image src='{{item.image}}'></image>
+      <text style='font-size:30rpx'>{{item.name}}</text>
+    </view>
+    <view class='class-right'>
+      <text style='font-size:24rpx'>{{item.num}}人参与</text>
+      <image src='{{item.gengduo}}'></image>
+    </view>
+  </view>
+  <scroll-view scroll-x="true" class='erzi-scroll'>
+    <view class='erzi' wx:for="{{item.img}}">
+      <image src='{{item.images}}'></image>
+    </view>
+    <view class=' text-1' style='color:#333333;font-size:28rpx;'>
+      <view class='position'>
+        <view>点击查看</view>    
+        <view>更多内容</view>
+      </view>    
+    </view>
+  </scroll-view>
+</view>

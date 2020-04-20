@@ -1,0 +1,3 @@
+/* pages/templates/comment/comment.wxss */
+@import '/pages/templates/flex/flex2.wxss';
+@import '/pages/viddetail/viddetail';

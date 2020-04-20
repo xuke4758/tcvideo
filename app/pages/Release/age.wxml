@@ -1,0 +1,6 @@
+<!--年龄-->
+<view class="item-age">
+  <view wx:for="{{age}}">
+    {{item.nian}}岁
+  </view>
+</view>

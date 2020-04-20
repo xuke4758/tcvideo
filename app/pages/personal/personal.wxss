@@ -1,0 +1,95 @@
+.personal{
+  width: 100%;
+  padding: 0 24rpx;
+  box-sizing: border-box;
+}
+.personal .presonal-object{
+  display: flex;
+  justify-content: space-between;
+  padding: 24rpx 0;
+}
+
+.personal .presonal-image{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+.personal .presonal-image image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.presonal-news{
+  width: 470rpx;
+}
+.personal .presonal-object-1 {
+  display: flex;
+  justify-content: space-between;
+  padding:15rpx 57rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #fff;
+}
+.personal .presonal-object-1 .guanzu{
+  font-size: 22rpx;
+  color: #808080;
+}
+.item-btn{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 13rpx;
+}
+.item-btn .guanzu-btn{
+  width: 350rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 24rpx;
+  border-radius: 10rpx;
+  background: #4A90E2;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.item-btn image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.item-btn .xinxi{
+  width: 275rpx;
+  background: #000;
+  border: 2rpx solid #4A90E2;
+}
+.presonal-text{
+  border-bottom: 2rpx solid #333333;
+}
+.presonal-text .presonal-text-a{
+  display: flex;
+  align-items: center;
+}
+.presonal-text .presonal-text-a .abc{
+  margin: 0 12rpx;
+}
+.presonal-text .presonal-text-b{
+  padding: 18rpx 0;
+  font-size: 24rpx;
+}
+.item-btn .image-1{
+  margin:0 35rpx;
+}
+
+/* 作品和喜欢 */
+.vid{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 30rpx;
+}
+.vid view{
+  margin:21rpx 64rpx;
+}
+.vid .zuoping{
+  color: #808080;
+}
+.vid .xihuan{
+  color: #fff;
+}

@@ -1,0 +1,57 @@
+/* pages/template/sault/sault.wxss */
+@import '/pages/templates/flex/flex2.wxss';
+.sault-li{
+  /* box-sizing: border-box; */
+  /* margin: 0 18rpx 0 0; */
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+  padding: 0 9rpx 20rpx 9rpx;
+  width: 342rpx;
+  position: relative;
+}
+.sault-li-bf{
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  width: 28rpx;
+  height: 28rpx;
+  z-index: 9;
+}
+.sault-li-big{
+  width: 100%;
+  position: relative;
+}
+.sault-li-big-img{
+  margin: 0 auto;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 430rpx;
+  border-radius: 8rpx;
+}
+.sault-li-t{
+  padding: 14rpx 0 16rpx;
+}
+.sault-li-tx{
+  padding: 0 15rpx;
+  line-height: 34rpx;
+}
+.sault-li-btm{
+  padding: 0 14rpx 0;
+}
+.sault-li-btm-z{
+  height: 40rpx;
+}
+.sault-head{}
+.sault-head-tx{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 12rpx 0 0;
+  border-radius: 20rpx;
+}
+.sault-head-xing{
+  width: 22rpx;
+  height: 22rpx;
+  margin: 0 8rpx 0 0;
+}

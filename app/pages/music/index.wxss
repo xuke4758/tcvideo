@@ -1,0 +1,48 @@
+/* pages/music/index.wxss */
+@import '/pages/templates/flex/flex2.wxss';
+
+.search-m{
+  height: 70rpx;
+}
+.search-in{
+  width: 660rpx;
+}
+.search-img{
+  width: 70rpx;
+  height: 70rpx;
+}
+.search-img .img{
+  width: 40rpx;
+  height: 40rpx;
+}
+.music-list{
+  padding: 12rpx 19rpx 0;
+}
+.music-li{
+  padding:10rpx 0 0;
+}
+.music-li-img{}
+.music-li-img .img{
+  width: 88rpx;
+  height: 88rpx;
+}
+.music-yy-list{
+  padding: 20rpx 0 0 0;
+}
+.music-yy-li-img{
+  width: 132rpx;
+  height: 132rpx;
+}
+.music-yy-li-img-bf{
+  width: 32rpx;
+  height: 38rpx;
+  left: 50%;
+  top: 50%;
+  margin-top: -19rpx;
+  margin-left: -16rpx;
+}
+.music-yy-li-xing{
+  padding: 4rpx 0 4rpx 4rpx;
+  width: 42rpx;
+  height: 42rpx;
+}

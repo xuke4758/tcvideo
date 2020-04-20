@@ -1,0 +1,85 @@
+/* pages/index/search.wxss */
+@import '/pages/templates/flex/flex2.wxss';
+.search-input{
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  font-size: 28rpx;
+  color: #fff;
+}
+.search-input-place{
+  color: #fff;
+  opacity: .2;
+}
+.searchimg{
+  width: 36rpx;
+  height: 36rpx;
+}
+.search-btn{
+  height: 100%;
+  padding: 0 0 0 10rpx;
+  margin: 0;
+  line-height: inherit;
+  border-radius: 0;
+  background-color: transparent;
+}
+.search-btn::after{
+  border: none;
+}
+.city-t{
+  padding: 10rpx 0 0 0;
+}
+.city-dw{
+  padding: 0 0 0 24rpx;
+  height: 54rpx;
+}
+.city-dw-img{
+  width: 22rpx;
+  height: 24rpx;
+  margin: 0 16rpx 0 0;
+}
+.city-info{
+  padding: 0 0 0 24rpx;
+  height: 64rpx;
+}
+.city-line{
+  height: 1px;
+  background: rgba(255,255,255,0.20);
+}
+.city-line-mg{
+  margin: 14rpx 24rpx;
+}
+.city-cen{
+  padding: 0 24rpx;
+}
+.city-cen-ls{
+  height: 74rpx;
+}
+.city-cen-ls-img{
+  width: 22rpx;
+  height: 22rpx;
+  margin: 0 16rpx 0 0;
+}
+.city-ls-list{
+  padding-bottom: 14rpx;
+}
+.city-ls-li{
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 24rpx 12rpx 0;
+  padding: 0 28rpx;
+  height: 54rpx;
+  border: 1px solid rgba(255,255,255, 1);
+  border-radius: 4rpx;
+  font-size: 26rpx;
+  color: #fff;
+}
+.city-ls-li .t{
+  opacity: .8;
+}
+.city-clear{
+  width: 22rpx;
+  height: 24rpx;
+}

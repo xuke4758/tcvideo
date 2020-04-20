@@ -1,0 +1,29 @@
+/* pages/search/toground.wxss */
+@import '/pages/search/index.wxss';
+@import '/pages/templates/flex/flex2.wxss';
+.search-clear{
+  width: 22rpx;
+  height: 22rpx;
+  padding: 10rpx;
+}
+.search-btn-t{
+  width: 132rpx;
+}
+.search-fl .fg1{
+  opacity: .5;
+}
+.search-fl .fg1.active{
+  opacity: 1;
+}
+.search-li{
+  height: 68rpx;
+}
+.follow{
+  width: 98rpx;
+  height: 46rpx;
+  border: 1px solid #4A90E2;
+  border-radius: 8rpx;
+}
+.follow-y{
+  border-color: #fff;
+}

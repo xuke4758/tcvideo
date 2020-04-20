@@ -1,0 +1,9 @@
+<!--添加位置-->
+<view class='address'>
+  <view class='address-input'>
+    <image class='address-image' src='../../assets/shou.png'></image>
+    <input placeholder="这是一个可以自动聚焦的input" style='font-size:28rpx;width:580rpx;color:#fff' auto-focus/>
+    <image class='address-img' src='../../assets/qing.png'></image>
+  </view>
+  <view class="address-show">不显示我的位置</view>
+</view>

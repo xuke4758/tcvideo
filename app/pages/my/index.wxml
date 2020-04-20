@@ -1,0 +1,73 @@
+<!-- 头部 -->
+<view class='box'>
+  <view class='top'>
+    <view class='follow'>
+      <!-- 头像 -->
+      <view class='follow-pai' wx:for="{{arrAll}}">
+        <view class='follow-image'>
+          <image src='{{item.url}}' mode="{{aspectFit}}"></image>
+        </view>
+        <view class='follow-text'>
+          <text>{{item.name}}</text>
+        </view>
+      </view>
+      <!-- 更多 -->
+      <view class='follow-gengduo' bindtap='geng_rou'>
+        <image src='../../assets/More.png'></image>
+      </view>
+    </view>
+    <view class='grad'>
+      <image src='../../assets/zhezhao.png' class='image1'></image>
+    </view>
+  </view>
+  <view class='video'>
+    <view class='video-object'>
+      <view class='video-image'>
+      <!-- 头像 -->
+        <image src='../../assets/touxiang4.jpg' mode="{{aspectFit}}"></image>
+      </view>
+      <view class="video-text">
+        <view class='video-text-1'>@郭小姐啊</view>
+        <view class='video-text-2'>1小时前</view>
+      </view>
+    </view>
+    <!-- 文本 -->
+    <view class='video-Title'>与你合拍@我要吃肉肉 这宝宝的舞蹈是无人能超越的，宝宝才是主角，我是打酱油的！ #与宝宝跳舞</view>
+    <!-- 视频 -->
+    <view class='myVideo-id'>
+      <video id="myVideo" class='shiping' src="../../assets/abc.mp4" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls="{{abc}}" loop autoplay bindplay="abc" objectFit="cover">
+        <!-- <view class='myVideo-radius'>
+          <image src='../../assets/yy.png'></image>
+          <text>@郭小姐啊</text>
+        </view> -->
+        <cover-view class='myVideo-radius'>
+          <cover-image class='video-image' src='../../assets/yy.png'></cover-image>
+          <cover-view>@郭小姐啊</cover-view>
+          <cover-image class='video-pa' src='../../assets/videopa.png'></cover-image>
+        </cover-view>
+      </video>
+    </view>
+    <view class='video-task'>
+      <!-- 点赞 -->
+      <view class='video-task-1'>
+        <image src='../../assets/yz.png'></image>
+        123
+      </view>
+      <!--消息 -->
+      <view class='video-task-1'>
+        <image src='../../assets/xx.png'></image>
+        123
+      </view>
+      <!-- 收藏 -->
+      <view class='video-task-1'>
+        <image src='../../assets/sc.png'></image>
+        123
+      </view>
+      <!-- 分享 -->
+      <button size='mini' open-type="share" class='video-task-1' style='background:#000;color:#fff;padding:0;margin:0'>
+        <image src='../../assets/fx.png'></image>
+        123
+      </button>
+    </view>
+  </view>
+</view>

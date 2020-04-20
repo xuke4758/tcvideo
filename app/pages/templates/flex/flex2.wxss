@@ -1,0 +1,528 @@
+page cover-image{
+  width:320px;
+  height:240px;
+  display:inline-block;
+  overflow: inherit;
+  pointer-events: inherit;
+}
+page cover-view{
+  display:block;
+  line-height: inherit;
+  overflow: initial;
+  white-space:normal;
+  pointer-events: inherit;
+}
+.twohide,.twoHide{
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-box-pack:center;
+  -webkit-line-clamp:2;
+  overflow:hidden;
+  word-break: break-all;
+}
+.onehide,oneHide{
+  word-break:keep-all;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.yeswrap{
+  word-wrap: break-word;
+  word-break: normal;
+}
+.nowrap{
+  white-space:nowrap;
+}
+.overhide{
+  overflow:hidden;
+}
+.dsf{
+  display: flex;
+  display: -webkit-flex;
+}
+.dsif{
+  display: inline-flex;
+  display: -webkit-inline-flex;
+}
+.jcc{
+  justify-content: center;
+}
+.txtcen{
+  text-align: center;
+}
+.jcsb{
+  justify-content: space-between;
+}
+.jcfe{
+  justify-content: flex-end;
+}
+.alb{
+  align-items: baseline;
+}
+.alc{
+  align-items: center;
+}
+.alfe{
+  align-items: flex-end;
+}
+.fz20{
+  font-size: 20rpx;
+} 
+.fz22{
+  font-size: 22rpx;
+} 
+.fz24{
+  font-size: 24rpx;
+} 
+.fz28{
+  font-size: 28rpx;
+} 
+.fz26{
+  font-size: 26rpx;
+} 
+.fz28{
+  font-size: 28rpx;
+} 
+.fz30{
+  font-size: 30rpx;
+} 
+.fz32{
+  font-size: 32rpx;
+} 
+.fz40{
+  font-size: 40rpx;
+} 
+.fwb{
+  font-weight: bold;
+}
+.colfff{
+  color: #fff;
+}
+.colfff5{
+  color: rgba(255, 255, 255, .5);
+}
+.colfff4{
+  color: rgba(255, 255, 255, .4);
+}
+.colfff10{
+  color: rgba(255, 255, 255, 1);
+}
+.w100b{
+  width: 100%;
+}
+.h100b{
+  height: 100%;
+}
+.bgfff{
+  background: #fff;
+}
+.bg0f0{
+  background: #0f0;
+}
+.mt14{
+  margin-top: 14rpx;
+}
+.pb20{
+  padding-bottom: 20rpx;
+}
+.pd12{
+  padding: 0 12rpx;
+}
+.pd24{
+  padding: 0 24rpx;
+}
+.bbfff2{
+  border-bottom: 1px solid rgba(255,255,255,0.20);
+}
+.btfff2{
+  border-top: 1px solid rgba(255,255,255,0.20);
+}
+.h70{
+  height: 70rpx;
+}
+.h86{
+  height: 86rpx;
+}
+.h80{
+  height: 80rpx;
+}
+.h20{
+  height: 20rpx;
+}
+.h38{
+  height: 38rpx;
+}
+.h76{
+  height: 76rpx;
+}
+.h72{
+  height: 72rpx;
+}
+.h140{
+  height: 140rpx;
+}
+.w80b{
+  width: 80%;
+}
+.w90b{
+  width: 90%;
+}
+.w95b{
+  width: 95%;
+}
+.mr22{
+  margin-right: 22rpx;
+}
+.pl24{
+  padding-left: 24rpx;
+}
+.pr124{
+  padding-right: 124rpx;
+}
+.pore{
+  position: relative;
+}
+.poab{
+  position: absolute;
+}
+.pofx{
+  position: fixed;
+}
+.t0{
+  top: 0;
+}
+.t1{
+  top: 1px;
+}
+.l0{
+  left: 0;
+}
+.b0{
+  bottom: 0;
+}
+.r0{
+  right: 0;
+}
+.col4a90e2{
+  color: #4a90e2;
+}
+.op8{
+  opacity: .8;
+}
+.op6{
+  opacity: .6;
+}
+.op5{
+  opacity: .5;
+}
+.op4{
+  opacity: .4;
+}
+.op3{
+  opacity: .3;
+}
+.op2{
+  opacity: .2;
+}
+.mr21{
+  margin-right: 21rpx;
+}
+.pbmain {
+  padding: 0 15rpx;
+}
+.pbbox {
+  -webkit-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 0;
+  column-gap: 0;
+}
+.plr85{
+  padding-left: 85rpx;
+  padding-right: 85rpx;
+}
+.plr170{
+  padding-left: 170rpx;
+  padding-right: 170rpx;
+}
+.fg1{
+  flex-grow: 1;
+  width: 0;
+}
+.w112{
+  width: 112rpx;
+}
+.h112{
+  height: 112rpx;
+}
+.ptb36{
+  padding-top: 36rpx;
+  padding-bottom: 36rpx;
+}
+.bdra50b{
+  border-radius: 50%;
+}
+.mr24{
+  margin-right: 24rpx;
+}
+.pb2{
+  padding-bottom: 2rpx;
+}
+.pb3{
+  padding-bottom: 3rpx;
+}
+.pb4{
+  padding-bottom: 4rpx;
+}
+.pb5{
+  padding-bottom: 5rpx;
+}
+.bg000{
+  background-color: #000;
+}
+.zindex9{
+  z-index: 9;
+}
+.zindex99{
+  z-index: 99;
+}
+.t72{
+  top: 72rpx;
+}
+.zindex5{
+  z-index: 5;
+}
+.zindex10{
+  z-index: 10;
+}
+.zindex15{
+  z-index: 15;
+}
+.zindex20{
+  z-index: 20;
+}
+.zindex25{
+  z-index: 25;
+}
+.zindex30{
+  z-index: 30;
+}
+.zindex100{
+  z-index: 100;
+}
+.ml10{
+  margin-left: 10rpx;
+}
+.ml14{
+  margin-left: 14rpx;
+}
+.pl14{
+  padding-left: 14rpx;
+}
+.pl39{
+  padding-left: 39rpx;
+}
+.pt24{
+  padding-top: 24rpx;
+}
+.h34{
+  height: 34rpx;
+}
+.pb18{
+  padding-bottom: 32rpx;
+}
+.w222{
+  width: 222rpx;
+}
+.w120{
+  width: 120rpx;
+}
+.h40{
+  height: 40rpx;
+}
+.plr36{
+  padding-left: 36rpx;
+  padding-right: 36rpx;
+}
+.h74{
+  height: 74rpx;
+}
+.pr24{
+  padding-right: 24rpx;
+}
+.w640{
+  width: 640rpx;
+}
+.w60{
+  width: 60rpx;
+}
+.w80{
+  width: 80rpx;
+}
+.w90{
+  width: 90rpx;
+}
+.col32{
+  color: #323232;
+}
+.col80{
+  color: #808080;
+}
+.lh34{
+  line-height: 34rpx;
+}
+.mt2{
+  margin-top: 2rpx;
+}
+.mt4{
+  margin-top: 4rpx;
+}
+.t2{
+  top: 2rpx;
+}
+.ml19{
+  margin-left: 19rpx;
+}
+.blfff2{
+  border-left: 1px solid rgba(255, 255, 255, .2);
+}
+.lh28{
+  line-height: 28rpx;
+}
+.pb8{
+  padding-bottom: 8rpx;
+}
+.pt8{
+  padding-top: 8rpx;
+}
+.pt10{
+  padding-top: 10rpx;
+}
+.pb10{
+  padding-bottom: 10rpx;
+}
+.pb5{
+  padding-bottom: 5rpx;
+}
+.dsinline{
+  display: inline;
+}
+.w560{
+  width: 560rpx;
+}
+.l80{
+  left: 80rpx;
+}
+.pd10{
+  padding: 10rpx;
+}
+.pd15{
+  padding: 15rpx;
+}
+.pl110{
+  padding-left: 110rpx;
+}
+.pr110{
+  padding-right: 110rpx;
+}
+.h32{
+  height: 32rpx;
+}
+.h202{
+  height: 202rpx;
+}
+.ml80{
+  margin-left: 80rpx;
+}
+.mr80{
+  margin-right: 80rpx;
+}
+.ml40{
+  margin-left: 40rpx;
+}
+.mr40{
+  margin-right: 40rpx;
+}
+.pl40{
+  padding-left: 40rpx;
+}
+.pr40{
+  padding-right: 40rpx;
+}
+.h62{
+  height: 62rpx;
+}
+.l80{
+  left: 80rpx;
+}
+.lf66{
+  left: -66rpx;
+}
+.trans3{
+  transition: all .3s linear;
+}
+.pl44{
+  padding-left: 44rpx;
+}
+.pr44{
+  padding-right: 44rpx;
+}
+.w130{
+  width: 130rpx;
+}
+.h130{
+  height: 130rpx;
+}
+.t24{
+  top: 24rpx;
+}
+.t16{
+  top: 16rpx;
+}
+.r24{
+  right: 24rpx;
+}
+.pb28{
+  padding-bottom: 28rpx;
+}
+.h90{
+  height: 90rpx;
+}
+.h180{
+  height: 180rpx;
+}
+.bg0004{
+  background-color: rgba(0, 0, 0, .4);
+}
+.colccc{
+  color: #ccc;
+}
+.h250{
+  height: 250rpx;
+}
+.h200{
+  height: 200rpx;
+}
+.w200{
+  width: 200rpx;
+}
+.w140{
+  width: 140rpx;
+}
+.h140{
+  height: 140rpx;
+}
+.bb333{
+  border-bottom: 1px solid #333;
+}
+.pb24{
+  padding-bottom: 24rpx;
+}
+.pb12{
+  padding-bottom: 12rpx;
+}
+.ml24{
+  margin-left: 24rpx;
+}
+.b4{
+  bottom: 4rpx;
+}

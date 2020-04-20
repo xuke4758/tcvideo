@@ -1,0 +1,158 @@
+/* pages/shot/shot.wxss */
+@import '/pages/templates/flex/flex2.wxss';
+.close-shot{
+  /* width: 30rpx;
+  height: 30rpx; */
+}
+.close-shot .img{
+  padding: 24rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.shot-menu{
+  padding: 8rpx 0;
+}
+.shot-menu-1{
+  padding: 16rpx 0;
+}
+.shot-menu-t{
+  width: 108rpx;
+}
+.shot-menu-t-img{
+  width: 60rpx;
+  height: 60rpx;
+}
+.shot-menu-t .img{
+  width: 60rpx;
+  height: 60rpx;
+}
+.shotyy{
+  padding: 20rpx 44rpx 6rpx;
+}
+.shotyy .img{
+  width: 68rpx;
+  height: 70rpx;
+}
+.shotdian{
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-bottom: 8rpx;
+}
+.shotbtn{
+  
+}
+.shotbtn-1{
+  width: 122rpx;
+  height: 122rpx;
+  border: 2px solid #4a90e2;
+  border-radius: 50%;
+}
+.shotbtn-2{
+  width: 116rpx;
+  height: 116rpx;
+  border: 8rpx solid rgba(74, 144, 226, .5);
+  border-radius: 50%;
+}
+.shotbtn-b{
+  width: 116rpx;
+  height: 116rpx;
+  background-color: #4a90e2;
+  border-radius: 50%;
+}
+.shotbtn-2 .shotbtn-b{
+  width: 102rpx;
+  height: 102rpx;
+}
+.shotaddt .img{
+  width: 68rpx;
+  height: 70rpx;
+}
+.shotback .img{
+  width: 30rpx;
+  height: 46rpx;
+  padding: 40rpx 40rpx 40rpx 24rpx;
+}
+.phb-l{
+  width: 340rpx;
+  height: 60rpx;
+  border-radius: 8rpx;
+  background: #4A90E2;
+  color: #fff;
+  font-size: 28rpx;
+}
+.phb-r{
+  width: 338rpx;
+  height: 58rpx;
+  border-radius: 8rpx;
+  background: transparent;
+  border: 1px solid #4A90E2;
+  color: #4A90E2;
+  font-size: 28rpx;
+}
+input.fllow-pl-bin-input{
+  width: 560rpx;
+  color: #fff;
+  font-size: 24rpx;
+}
+.quan-k{
+  width: 180rpx;
+  height: 180rpx;
+  border-color: rgba(74, 144, 226, .5);
+  border-style: solid;
+  border-radius: 50%;
+  animation:quany 1.2s linear infinite;
+  -webkit-animation:quany 1.2s linear infinite;
+}
+.quan .k{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 10rpx;
+  background-color: rgba(74, 144, 226, 1);
+}
+
+@keyframes quany{
+  0%{
+    width: 180rpx;
+    height: 180rpx;
+    border-width: 10rpx;
+  }
+  50%{
+    width: 160rpx;
+    height: 160rpx;
+    border-width: 20rpx;
+  }
+  100%{
+    width: 180rpx;
+    height: 180rpx;
+    border-width: 10rpx;
+  }
+}
+
+@-webkit-keyframes quany{
+  0%{
+    width: 180rpx;
+    height: 180rpx;
+    border-width: 10rpx;
+  }
+  50%{
+    width: 160rpx;
+    height: 160rpx;
+    border-width: 20rpx;
+  }
+  100%{
+    width: 180rpx;
+    height: 180rpx;
+    border-width: 10rpx;
+  }
+}
+.chosemus{
+  margin: 0 0 0 24rpx;
+}
+.chosemus .img{
+  margin:0 16rpx 0 0;
+  width: 68rpx;
+  height: 70rpx;
+}
+

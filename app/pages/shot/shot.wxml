@@ -1,0 +1,134 @@
+<!--pages/shot/shot.wxml-->
+<canvas style="width: 100%;height: 100%;position:fixed;z-index:-1;top:-1000000000rpx;" canvas-id='mycanvas'></canvas>
+<view wx:if='{{phflag == 1}}'>
+  <view class='poab w100b h100b t0 l0 zindex5'>
+    <camera class='w100b h100b' device-position="{{devicetp}}" flash="auto" binderror="error">
+      <cover-view class='pofx w100b h100b t0 l0 zindex100'>
+        <cover-view class='w100b h100b'>
+          <cover-view class='close-shot poab l0 t0 '>
+            <cover-image class='img' src='{{close}}'></cover-image>
+          </cover-view>
+          <cover-view wx:if='{{pshavetp==1}}' class='shot-menu poab r0 t0 fz22 colfff'>
+            <cover-view bindtap='devicetpfn' class='shot-menu-1'>
+              <cover-view class='shot-menu-t dsf jcc'><cover-image class='img' src='{{fz}}'></cover-image></cover-view>
+              <cover-view class='dsf txtcen jcc h32'>翻转</cover-view>
+            </cover-view>
+            <cover-view bindtap='shotflashfn' class='shot-menu-1'>
+              <cover-view class='shot-menu-t dsf jcc'>
+                <cover-view class='shot-menu-t-img pore'>
+                  <cover-image class='img' src='{{sgd}}'></cover-image>
+                  <cover-view wx:if='{{flash == "off"}}' class='poab r0 b0 fz20 colfff'>X</cover-view>
+                  <cover-view wx:if='{{flash == "auto"}}' class='poab r0 b0 fz20 colfff'>A</cover-view>
+                  <cover-view wx:if='{{flash == "on"}}' class='poab r0 b0 fz20 colfff'>N</cover-view>
+                  <!-- <cover-view class='poab r0 b0 fz20 colfff'>A</cover-view> -->
+                </cover-view>
+              </cover-view>
+              <cover-view class='dsf txtcen jcc h32'>闪光灯</cover-view>
+            </cover-view>
+          </cover-view>
+          <cover-view class='poab b0 l0 w100b'>
+            <cover-view class='pl110 pr110 pore h202 {{pshavetp==1 ? "h202" : "h250"}}'>
+              <cover-view class='{{pshavetp==1 ? "h140" : "h250"}} dsf jcc'>
+                <cover-view wx:if='{{pshavetp==1}}'>
+                  <cover-view class='shotyy dsf jcc'>
+                    <cover-image class='img' src='{{shotyy}}'></cover-image>
+                  </cover-view>
+                  <cover-view class='dsf txtcen jcc h32 fz22 colfff'>音乐</cover-view>
+                </cover-view>
+                <cover-view class='pl44 pr44 dsf jcc alc {{pshavetp==1 ? "w140 h140" : "h200 w200"}}'>
+                  <cover-view wx:if='{{offtp==1}}'>
+                    <cover-view bindtap='takePhoto' class='shotbtn'>
+                      <cover-view class='shotbtn-1 dsf jcc alc'>
+                        <cover-view class='shotbtn-b'></cover-view>
+                      </cover-view>
+                    </cover-view>
+                  </cover-view>
+                  <cover-view wx:elif='{{offtp==2}}'>
+                    <cover-view bindtap='pshavefn' wx:if='{{pshavetp == 1}}' class='shotbtn'>
+                      <cover-view class='shotbtn-2 dsf jcc alc'>
+                        <cover-view class='shotbtn-b'></cover-view>
+                      </cover-view>
+                    </cover-view>
+                    <cover-view bindtap='pshaveendfn' wx:else class='quan dsf alc jcc pore'>
+                      <cover-view class='quan-k'></cover-view>
+                      <cover-view class='poab w200 h200 dsf alc jcc'><cover-view class='k'></cover-view></cover-view>
+                    </cover-view>
+                  </cover-view>
+                </cover-view>
+                <cover-view wx:if='{{pshavetp==1}}'>
+                  <cover-view class='shotyy dsf jcc'>
+                    <cover-image class='img' src='{{shotbd}}'></cover-image>
+                  </cover-view>
+                  <cover-view class='dsf txtcen jcc h32 fz22 colfff'>本地</cover-view>
+                </cover-view>
+              </cover-view>
+              <cover-view wx:if='{{pshavetp==1}}' class='h62 dsf jcc pore colfff fz28 zindex5'><!--  -->
+                <cover-view class='dsif jcc pore l80 {{offtp == 2 ? "lf66" : ""}}'>
+                  <cover-view bindtap='pztpfn' class='pl40 pr40'>
+                    <cover-view class=''>拍照</cover-view>
+                  </cover-view>
+                  <cover-view bindtap='psptpfn' class='pl40 pr40'>
+                    <cover-view class=''>拍视频</cover-view>
+                  </cover-view>
+                </cover-view>
+              </cover-view>
+              <cover-view wx:if='{{pshavetp==1}}' class='dsf jcc poab b0 l0 w100b'>
+                <cover-view class='shotdian'></cover-view>
+              </cover-view>
+            </cover-view>
+          </cover-view>
+        </cover-view>
+      </cover-view>
+    </camera>
+  </view>
+</view>
+
+<view wx:if='{{phflag == 2}}' class='pofx l0 t0 w100b h100b'>
+  <view class='w100b h100b pore'>   
+    <image class='w100b h100b' src='{{phtxtimg || phimg}}'></image>
+    <view class='poab l0 t16 shotback'><image bindtap='shotback' class='img' src='{{shotback}}'></image></view>
+    <view bindtap='addtxt' wx:if='{{addtxttp != 2}}' class='poab t24 r24 w120'>
+      <view class='dsf jcc shotaddt'><image class='img' src='{{shotaddt}}'></image></view>
+      <view wx:if='{{confimb}}' class='dsf alc jcc h40 fz28 colfff'>修改文字</view>
+      <view wx:else class='dsf alc jcc h40 fz28 colfff'>添加文字</view>
+    </view>
+    <view wx:if='{{addtxttp == 1}}' class='poab w100b l0 b0 phb'>
+      <view class='pl24 pr24 pb28 dsf jcsb'>
+        <view bindtap='nextpz' class='phb-l dsf alc jcc'>继续拍摄</view>
+        <view bindtap='nextwc' class='phb-r dsf alc jcc'>下一步</view>
+      </view>
+    </view>
+    <view wx:if='{{addtxttp == 2}}' class='poab w100b l b0 h90 bg0004'>
+      <view class='w100b h100b dsf jcsb'>
+        <view class='plr36 h100b'><input bindinput='entryfn' value='{{entry}}' focus='{{focus}}' maxlength='{{max20}}' class='h100b fz32 fllow-pl-bin-input' placeholder-class='colccc' placeholder='写一下此刻的心情吧...'></input></view>
+        <view bindtap='createNewImg' class='dsif alc jcc w112 h100b fz32 col4a90e2'>确认</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- <canvas wx:if='{{addtxttp == 3}}' style="width: {{windowWidth}}px;height: {{windowHeight}}px;position:fixed;z-index:9999;top: 0;left: 0;" canvas-id='mycanvas'></canvas> -->
+<view wx:if='{{phflag == 3 && CameraRes.tempVideoPath}}' class=''>
+  <view class='pofx t0 l0 w100b h100b bgfff'>
+    <video id='myVideo' class='w100b h100b' bindplay='' show-center-play-btn='{{controls}}' 
+      show-progress='{{controls}}' show-fullscreen-btn='{{controls}}' show-play-btn='{{controls}}'
+      muted='{{controls}}' page-gesture='{{controls}}' enable-progress-gesture='{{controls}}'
+      controls='{{controls}}' autoplay='{{autoplay}}' loop='{{loop}}' objectFit='fill' 
+      src='{{CameraRes.tempVideoPath}}'></video>
+  </view>
+  <cover-view class='pofx l0 t0 w100b h100b zindex10'>
+    <cover-view class='w100b h100b pore'>
+      <cover-view class='poab l0 t0 shotback'><cover-image bindtap='shotspback' class='img' src='{{shotback}}'></cover-image></cover-view>
+      <cover-view class='poab w100b l0 b0 phb'>
+      <cover-view class='pl24 pr24 pb28 dsf jcsb'>
+        <cover-view class='chosemus dsf alc jcc'>
+          <cover-image class='img' src='{{shotyy}}'></cover-image>
+          <cover-view class='fz22 colfff'>选择音乐</cover-view>
+        </cover-view>
+        <cover-view bindtap='nextvideo' class='phb-l dsf txtcen alc jcc'>下一步</cover-view>
+      </cover-view>
+    </cover-view>
+    </cover-view>
+  </cover-view>
+</view>
+
+

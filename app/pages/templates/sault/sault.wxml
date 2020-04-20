@@ -1,0 +1,32 @@
+<!--pages/template/sault/sault.wxml-->
+<view class='sault-li'>
+  <view>
+    <view class='sault-li-big'>
+      <image class='sault-li-big-img' mode='widthFix' src='{{saultdata.img}}'></image>
+      <image class='sault-li-bf' src='{{bf}}'></image>
+    </view>
+    <view class='sault-li-t'>
+      <view class='sault-li-tx twohide fz24 fwb colfff10'>父行为举止的好坏的作用，孩子不听父母对孩子行为举止的好坏起到非常关键的作用，孩子不听</view>
+    </view>
+    <view class='sault-li-btm'>
+      <view class='sault-li-btm-z dsf jcsb alc'>
+        <view class='dsif'>
+          <view class='dsf alc sault-head'>
+            <image class='sault-head-tx' src='{{tx}}'></image>
+            <view class='sault-head-txt onehide fz22 colfff10'>辣妈成长日记</view>
+          </view>
+        </view>
+        <view class='dsif'>
+          <view wx:if='{{saultdata.shatype==1}}' class='dsf alc'>
+            <image class='sault-head-xing' src='{{saultdata.xing_a==1 ? xing : xing_a}}'></image>
+            <view class='fz22 colfff10'>123</view>
+          </view>
+          <view wx:if='{{saultdata.shatype==2}}' class='dsf alc'>
+            <image class='sault-head-xing' style='height: 24rpx;' src='{{distance}}'></image>
+            <view class='fz22 colfff10'>122m</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

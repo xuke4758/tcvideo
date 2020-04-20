@@ -1,0 +1,9 @@
+/* pages/Release/age.wxss */
+.item-age{
+  padding: 0 24rpx;
+  color: #fff;
+  font-size: 30rpx;
+}
+.item-age view{
+  margin-top: 36rpx;
+}

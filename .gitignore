@@ -1,0 +1,7 @@
+/public/index.html
+/public/api
+node_modules
+.idea
+package-lock.json
+dist
+app/project.config.json

@@ -1,0 +1,44 @@
+<!--pages/search/topic.wxml-->
+<view class='pl24 pr24 pt18'>
+  <view class='dsf bb333 pb24'>
+    <view class='topic-t-l dsf alc jcc'><image class='jing' src='{{jing}}'></image></view>
+    <view class='pl24 topic-t-r'>
+      <view class='topic-t-r-1 dsf alc fz36 colfff'>#产后减肥</view>
+      <view class='topic-t-r-2 dsf alc fz24 colfff4'>1134人参加</view>
+      <view class='topic-t-r-3 dsf alc jcc fz24 colfff'>
+        <image class='img' src='{{xing}}'></image><text>收藏</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view>
+  <view class='hot dsf jcsb alc'>
+    <view wx:if='{{hotqh==1}}' class='hot-tit pl24 dsif alc'>
+      <image class='img' src='{{hotcity}}'></image>
+      <text class='fz24 colfff'>热度排序</text>
+    </view>
+    <view wx:else class='hot-tit pl24 dsif alc'>
+      <image class='img' src='{{history}}'></image>
+      <text class='fz24 colfff'>时间排序</text>
+    </view>
+    <view bindtap='hotqhfn' class='hot-txt h100b fz24 col4a90e2 dsif alc'>切换</view>
+  </view>
+  <view class='topic-list pl24 pb24'>
+    <view class='yeswrap'>
+      <view class='topic-li'>
+        <view class='topic-li-img'><image class='img' src='{{tx}}'></image></view>
+      </view>
+      <view class='topic-li'>
+        <view class='topic-li-img'><image class='img' src='{{tx}}'></image></view>
+      </view>
+      <view class='topic-li'>
+        <view class='topic-li-img'><image class='img' src='{{tx}}'></image></view>
+      </view>
+      <view class='topic-li'>
+        <view class='topic-li-img'><image class='img' src='{{tx}}'></image></view>
+      </view>
+    </view>
+  </view>
+</view>
+

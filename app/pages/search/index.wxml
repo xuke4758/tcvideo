@@ -1,0 +1,44 @@
+<!--pages/index/search.wxml-->
+<form bindsubmit='gotoground'>
+  <view class='pd24'>
+    <view class='h70 dsf alc jcsb bbfff2'>
+      <view class='w90b h100b'><input placeholder='产后减肥' placeholder-class='search-input-place' class='search-input'></input></view>
+      <button class='search-btn dsif alc' form-type='submit'><image class='searchimg' src='{{searchimg}}'></image></button>
+    </view>
+  </view>
+</form>
+<view class=''>
+  <view class='city-cen'>
+    <view class='city-cen-ls dsf alc jcsb'>
+      <view>
+        <view class='dsf alc'>
+          <image class='city-cen-ls-img' src='{{history}}'></image>
+          <text class='fz28 colfff'>历史纪录</text>
+        </view>
+      </view>
+      <view><image class='city-clear' src='{{ls}}'></image></view>
+    </view>
+    <view class='city-ls-list'>
+      <view class='city-ls-li'><text class='t'>深圳</text></view>
+      <view class='city-ls-li'><text class='t'>北京北京北京北京北京</text></view>
+      <view class='city-ls-li'><text class='t'>上海</text></view>
+      <view class='city-ls-li'><text class='t'>天津</text></view>
+      <view class='city-ls-li'><text class='t'>上海上海</text></view>
+    </view>
+    <!-- <view class='city-line'></view> -->
+    <view class='city-hot mt14'>
+      <view class='city-cen-ls dsf alc'>
+        <image class='city-dw-img' src='{{hotcity}}'></image>
+        <text class='fz28 colfff'>热门搜索</text>
+      </view>
+    </view>
+    <view class='city-ls-list'>
+      <view class='city-ls-li'><text class='t'>北京北京</text></view>
+      <view class='city-ls-li'><text class='t'>北京北京</text></view>
+      <view class='city-ls-li'><text class='t'>上海</text></view>
+      <view class='city-ls-li'><text class='t'>天津天津</text></view>
+      <view class='city-ls-li'><text class='t'>北京</text></view>
+    </view>
+  </view>
+</view>
+
